@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\test-automation-self-drive\MSIL_AUTOMATION\runner\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.All_Master_Generic_API" hash-for-method="all_master_generic_api({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=tru...)">all_master_generic_api({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=tru...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.Customer_Register_Send_Otp" hash-for-method="customer_regsiter_send_otp({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1...)">customer_regsiter_send_otp({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.Common_Cust_Verify_Otp" hash-for-method="customer_verify_otp({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/...)">customer_verify_otp({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.generateToken" hash-for-method="gen_auth_token({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@5...)">gen_auth_token({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@5...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.Customer_Register_Send_Otp" hash-for-method="invalid_mobile_send_otp({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/a...)">invalid_mobile_send_otp({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestCases.Send_OTP" hash-for-method="s_otp({mobileNo=, appId=4.0, endpoint=qa/sendotp})">s_otp({mobileNo=, appId=4.0, endpoint=qa/sendotp})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.All_Master_Generic_API</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="all_master_generic_api({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=tru...)">
+                  </a> <!-- all_master_generic_api({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=tru...) -->
+                  <span class="method-name">all_master_generic_api</span>
+                  <span class="parameters">({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=true, registrationType=true, expectedMessage=, bodyType=true, fuelType=true, endpoint=/api/subscribe/vehicle/vehicle-attributes-master}, org.testng.TestRunner@50acf55d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Customer_Register_Send_Otp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customer_regsiter_send_otp({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1...)">
+                  </a> <!-- customer_regsiter_send_otp({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1...) -->
+                  <span class="method-name">customer_regsiter_send_otp</span>
+                  <span class="parameters">({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@50acf55d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalid_mobile_send_otp({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/a...)">
+                  </a> <!-- invalid_mobile_send_otp({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/a...) -->
+                  <span class="method-name">invalid_mobile_send_otp</span>
+                  <span class="parameters">({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@50acf55d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Common_Cust_Verify_Otp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customer_verify_otp({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/...)">
+                  </a> <!-- customer_verify_otp({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/...) -->
+                  <span class="method-name">customer_verify_otp</span>
+                  <span class="parameters">({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/verify}, org.testng.TestRunner@50acf55d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.generateToken</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gen_auth_token({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@5...)">
+                  </a> <!-- gen_auth_token({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@5...) -->
+                  <span class="method-name">gen_auth_token</span>
+                  <span class="parameters">({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@50acf55d)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.Send_OTP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="s_otp({mobileNo=, appId=4.0, endpoint=qa/sendotp})">
+                  </a> <!-- s_otp({mobileNo=, appId=4.0, endpoint=qa/sendotp}) -->
+                  <span class="method-name">s_otp</span>
+                  <span class="parameters">({mobileNo=, appId=4.0, endpoint=qa/sendotp})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\test-automation-self-drive\MSIL_AUTOMATION\runner\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.MSIL.TestUtils.CustomListners&quot;/&gt;
+    &lt;listener class-name=&quot;com.MSIL.TestUtils.RetryListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Test&quot;&gt;
+    &lt;parameter name=&quot;env&quot; value=&quot;QA&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.Send_OTP&quot;/&gt;
+      &lt;class name=&quot;TestCases.generateToken&quot;/&gt;
+      &lt;class name=&quot;TestCases.Customer_Register_Send_Otp&quot;/&gt;
+      &lt;class name=&quot;TestCases.Common_Cust_Verify_Otp&quot;/&gt;
+      &lt;class name=&quot;TestCases.All_Master_Generic_API&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">API Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 's_otp')
+data.setCell(0, 2, 'TestCases.Send_OTP')
+data.setCell(0, 3, 2435);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'gen_auth_token')
+data.setCell(1, 2, 'TestCases.generateToken')
+data.setCell(1, 3, 2028);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'customer_regsiter_send_otp')
+data.setCell(2, 2, 'TestCases.Customer_Register_Send_Otp')
+data.setCell(2, 3, 1022);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'customer_verify_otp')
+data.setCell(3, 2, 'TestCases.Common_Cust_Verify_Otp')
+data.setCell(3, 3, 879);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalid_mobile_send_otp')
+data.setCell(4, 2, 'TestCases.Customer_Register_Send_Otp')
+data.setCell(4, 3, 480);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'all_master_generic_api')
+data.setCell(5, 2, 'TestCases.All_Master_Generic_API')
+data.setCell(5, 3, 463);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">16 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.All_Master_Generic_API</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">configure</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Customer_Register_Send_Otp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">configure</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Common_Cust_Verify_Otp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">configure</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.generateToken</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">configure</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Send_OTP</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">configure</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(QA)</span>
+                <span class="method-start">462 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">469 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">492 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">s_otp({mobileNo=, appId=4.0, endpoint=qa/sendotp})</span>
+                <span class="method-start">492 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">2931 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.generateToken</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">3180 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">gen_auth_token({mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@5...)</span>
+                <span class="method-start">3181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">5211 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Customer_Register_Send_Otp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">5254 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customer_regsiter_send_otp({mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1...)</span>
+                <span class="method-start">5255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">6279 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalid_mobile_send_otp({mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/a...)</span>
+                <span class="method-start">6319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">6801 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Common_Cust_Verify_Otp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">6835 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customer_verify_otp({contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/...)</span>
+                <span class="method-start">6835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">7715 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.All_Master_Generic_API</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforClass</span>
+                <span class="method-start">7746 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">7747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">all_master_generic_api({expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=tru...)</span>
+                <span class="method-start">7748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">8212 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Send_OTP</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">8268 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="16" total="22" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7789" started-at="2021-02-26T04:53:20Z" finished-at="2021-02-26T04:53:28Z">
+    <groups>
+    </groups>
+    <test name="API Test" duration-ms="7789" started-at="2021-02-26T04:53:20Z" finished-at="2021-02-26T04:53:28Z">
+      <class name="TestCases.Send_OTP">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="setup" is-config="true" duration-ms="121" started-at="2021-02-26T10:23:19Z" finished-at="2021-02-26T10:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="configure()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="configure" is-config="true" duration-ms="340" started-at="2021-02-26T10:23:20Z" depends-on-methods="com.MSIL.Setup.BaseSetup.setup" finished-at="2021-02-26T10:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configure -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="beforeTest" is-config="true" duration-ms="4" started-at="2021-02-26T10:23:20Z" finished-at="2021-02-26T10:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="beforClass" is-config="true" duration-ms="3" started-at="2021-02-26T10:23:20Z" finished-at="2021-02-26T10:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:20Z" finished-at="2021-02-26T10:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="s_otp(java.util.Hashtable)[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="s_otp" duration-ms="2435" started-at="2021-02-26T10:23:20Z" data-provider="dp" finished-at="2021-02-26T10:23:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{mobileNo=, appId=4.0, endpoint=qa/sendotp}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s_otp -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="afterMethod" is-config="true" duration-ms="248" started-at="2021-02-26T10:23:22Z" finished-at="2021-02-26T10:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.Send_OTP@30c15d8b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:28Z" finished-at="2021-02-26T10:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestCases.Send_OTP -->
+      <class name="TestCases.All_Master_Generic_API">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.All_Master_Generic_API@411f53a0]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:27Z" finished-at="2021-02-26T10:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.All_Master_Generic_API@411f53a0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-02-26T10:23:27Z" finished-at="2021-02-26T10:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="all_master_generic_api(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.All_Master_Generic_API@411f53a0]" name="all_master_generic_api" duration-ms="463" started-at="2021-02-26T10:23:27Z" data-provider="dp" finished-at="2021-02-26T10:23:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedErrorCode=200, variant=true, color=true, transmissionType=true, channelType=true, model=true, registrationType=true, expectedMessage=, bodyType=true, fuelType=true, endpoint=/api/subscribe/vehicle/vehicle-attributes-master}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@50acf55d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- all_master_generic_api -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.All_Master_Generic_API@411f53a0]" name="afterMethod" is-config="true" duration-ms="38" started-at="2021-02-26T10:23:28Z" finished-at="2021-02-26T10:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.All_Master_Generic_API -->
+      <class name="TestCases.generateToken">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.generateToken@6771beb3]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:23Z" finished-at="2021-02-26T10:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="gen_auth_token(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.generateToken@6771beb3]" name="gen_auth_token" duration-ms="2028" started-at="2021-02-26T10:23:23Z" data-provider="dp" finished-at="2021-02-26T10:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{mobileNo=9744619855, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@50acf55d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gen_auth_token -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.generateToken@6771beb3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:23Z" finished-at="2021-02-26T10:23:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.generateToken@6771beb3]" name="afterMethod" is-config="true" duration-ms="43" started-at="2021-02-26T10:23:25Z" finished-at="2021-02-26T10:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.generateToken -->
+      <class name="TestCases.Customer_Register_Send_Otp">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:25Z" finished-at="2021-02-26T10:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="customer_regsiter_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="customer_regsiter_send_otp" duration-ms="1022" started-at="2021-02-26T10:23:25Z" data-provider="dp" finished-at="2021-02-26T10:23:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/register/send}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@50acf55d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_regsiter_send_otp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:25Z" finished-at="2021-02-26T10:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="afterMethod" is-config="true" duration-ms="39" started-at="2021-02-26T10:23:26Z" finished-at="2021-02-26T10:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="invalid_mobile_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="invalid_mobile_send_otp" duration-ms="480" started-at="2021-02-26T10:23:26Z" data-provider="dp" finished-at="2021-02-26T10:23:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/api/v1/otp/register/send}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@50acf55d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_mobile_send_otp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:26Z" finished-at="2021-02-26T10:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@51399530]" name="afterMethod" is-config="true" duration-ms="34" started-at="2021-02-26T10:23:26Z" finished-at="2021-02-26T10:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.Customer_Register_Send_Otp -->
+      <class name="TestCases.Common_Cust_Verify_Otp">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@6b2ea799]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:26Z" finished-at="2021-02-26T10:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="customer_verify_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Common_Cust_Verify_Otp@6b2ea799]" name="customer_verify_otp" duration-ms="879" started-at="2021-02-26T10:23:26Z" data-provider="dp" finished-at="2021-02-26T10:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/verify}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@50acf55d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_verify_otp -->
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@6b2ea799]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-02-26T10:23:26Z" finished-at="2021-02-26T10:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@6b2ea799]" name="afterMethod" is-config="true" duration-ms="31" started-at="2021-02-26T10:23:27Z" finished-at="2021-02-26T10:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.Common_Cust_Verify_Otp -->
+    </test> <!-- API Test -->
+  </suite> <!-- Suite -->
+</testng-results>
