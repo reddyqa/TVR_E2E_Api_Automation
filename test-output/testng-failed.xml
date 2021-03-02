@@ -8,66 +8,18 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Customer_Register_Cognito">
+      <class name="TestCases.City_Master_API_TC">
         <methods>
+          <include name="city_master" invocation-numbers="0 0 0"/>
           <include name="beforClass"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
+          <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="configure"/>
-          <include name="customer_register_cognito" invocation-numbers="0 0 0"/>
-        </methods>
-      </class> <!-- TestCases.Customer_Register_Cognito -->
-      <class name="TestCases.Send_OTP">
-        <methods>
-          <include name="beforClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="configure"/>
-          <include name="s_otp" invocation-numbers="0 0 0"/>
-        </methods>
-      </class> <!-- TestCases.Send_OTP -->
-      <class name="TestCases.generateToken">
-        <methods>
-          <include name="beforClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="gen_auth_token" invocation-numbers="0 0 0"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
           <include name="configure"/>
         </methods>
-      </class> <!-- TestCases.generateToken -->
-      <class name="TestCases.Common_Cust_Verify_Otp">
-        <methods>
-          <include name="beforClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="configure"/>
-          <include name="customer_verify_otp" invocation-numbers="0 0 0"/>
-        </methods>
-      </class> <!-- TestCases.Common_Cust_Verify_Otp -->
-      <class name="TestCases.Customer_Register_Send_Otp">
-        <methods>
-          <include name="beforClass"/>
-          <include name="afterSuite"/>
-          <include name="customer_regsiter_send_otp" invocation-numbers="0 0 0"/>
-          <include name="beforeMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="configure"/>
-        </methods>
-      </class> <!-- TestCases.Customer_Register_Send_Otp -->
+      </class> <!-- TestCases.City_Master_API_TC -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

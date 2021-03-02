@@ -5,6 +5,7 @@ import java.util.Hashtable;
 import org.testng.ITestContext;
 
 import com.MSIL.JSON_Creation.City_Master_Json;
+import com.MSIL.TestUtils.Verify_Response_city;
 
 import Query.Queries;
 import io.restassured.RestAssured;
@@ -13,6 +14,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class City_Master_API
 {
+	static Verify_Response_city re = new Verify_Response_city();
 	
 	@SuppressWarnings({ "unused", "static-access" })
 	public static void city_master_API(Hashtable<String, String> data, ITestContext context)
@@ -29,14 +31,13 @@ public class City_Master_API
 		Response response = request.post(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;
-		System.out.println("Response of all master API: "+response.getBody().asString());
-		
-		/*
-		 * if(v==200) { re.verify_Response(response,
-		 * data.get("expectedErrorCode"),data.get("expectedMessage")); }else {
-		 * re.verify_Response_1(response, data.get("expectedErrorCode"),
-		 * data.get("expectedMessage")); }
-		 */
+				
+		  if(v==200) { 
+			  re.verify_Response(response, data.get("expectedErrorCode"),data.get("expectedMessage")); 
+		  }else {
+			  //re.verify_Response_1(response, data.get("expectedErrorCode"), data.get("expectedMessage")); 
+		  }
+		 
 		 
 		
 	}
