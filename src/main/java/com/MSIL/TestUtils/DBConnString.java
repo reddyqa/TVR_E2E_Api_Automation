@@ -55,6 +55,13 @@ public class DBConnString
 			public static final String PASSWORD = ReadFromProperty
 					.getProperty(Properties.QA_COMMON_CUSTOMER_PASSWORD);
 		}
+		
+		public static final class PARTNER_ACL {
+			public static final String USERNAME = ReadFromProperty
+					.getProperty(Properties.QA_PARTNER_ACL_USERNAME);
+			public static final String PASSWORD = ReadFromProperty
+					.getProperty(Properties.QA_PARTNER_ACL_PASSWORD);
+		}
 
 	}
 

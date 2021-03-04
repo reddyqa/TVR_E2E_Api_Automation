@@ -27,6 +27,8 @@ public class Properties
 	public static final String QA_SUBSCRIBE_VEHICLE_MANAGEMENT_PASSWORD = "QA_SUBSCRIBE_VEHICLE_MANAGEMENT_PASSWORD";
 	public static final String QA_COMMON_CUSTOMER_USERNAME = "QA_COMMON_CUSTOMER_USERNAME";
 	public static final String QA_COMMON_CUSTOMER_PASSWORD = "QA_COMMON_CUSTOMER_PASSWORD";
+	public static final String QA_PARTNER_ACL_USERNAME = "QA_PARTNER_ACL_USERNAME";
+	public static final String QA_PARTNER_ACL_PASSWORD = "QA_PARTNER_ACL_PASSWORD";
 	public static final String HOTFIX_URL = "HOTFIX_URL";
 	public static final String HOTFIX_USERNAME = "HOTFIX_USERNAME";
 	public static final String HOTFIX_PASSWORD = "HOTFIX_PASSWORD";

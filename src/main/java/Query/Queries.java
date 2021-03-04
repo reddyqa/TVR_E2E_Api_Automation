@@ -43,7 +43,6 @@ public class Queries extends BaseSetup
 		query = "select mobile, first_name,middle_name, last_name, email,  gender, dob, business_type, occupation_type, referred_by, referral_code from customer_master "+ "where user_uuid= '"+user_uuid+ "';";
 		List<String>list = ReadFromDB.getData(Database.COMMON_CUSTOMER, query);
 		System.out.println(list.get(0));
-		//System.out.println("UUID Value : "+lhmap_db_data.get("mobile"));
 		return list;
 	}
 	
@@ -54,6 +53,33 @@ public class Queries extends BaseSetup
 		String otp = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
 		System.out.println("OTP Value: "+otp);
             return otp;
+      
+	}
+	
+	public static String citygroupid()
+	{
+		query = "select city_group_id from city_group_master";
+		String city_group_id = ReadFromDB.getData(Database.COMMON_MASTERDATA, query).get(0);
+		System.out.println("City Group id: "+city_group_id);
+            return city_group_id;
+      
+	}
+	
+	public static String partnerName(String id)
+	{
+		query = "select name1 from partner_master "+ "where id= '"+id+ "';";
+		String partner_name = ReadFromDB.getData(Database.PARTNER_ACL, query).get(0);
+		System.out.println("Partner Name: "+partner_name);
+            return partner_name;
+      
+	}
+	
+	public static String partnerlogoid(String id)
+	{
+		query = "select id from partner_logo "+ "where partner_id= '"+id+ "';";
+		String partnerlogo_id = ReadFromDB.getData(Database.PARTNER_ACL, query).get(0);
+		System.out.println("Partner Name: "+partnerlogo_id);
+            return partnerlogo_id;
       
 	}
 

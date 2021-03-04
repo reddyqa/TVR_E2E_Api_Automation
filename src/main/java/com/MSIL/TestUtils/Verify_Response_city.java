@@ -1,10 +1,5 @@
 package com.MSIL.TestUtils;
-
-import java.util.ArrayList;
 import java.util.Map;
-
-import org.testng.Assert;
-
 import Query.Queries;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -18,8 +13,7 @@ public class Verify_Response_city
         Queries q = new Queries();
         
         Map<String, String> lhmap = jsonPathEvaluator.getMap("data[0]");
-        //lhmap.put("cityId",jsonPathEvaluator.get("data[0]"));
         System.out.println("Error Message: "+lhmap.get("cityName"));
-        //Assert.assertEquals(lhmap, expected_message);
+       
     }
 }

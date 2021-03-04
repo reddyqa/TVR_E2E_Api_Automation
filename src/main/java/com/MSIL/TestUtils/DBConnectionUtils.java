@@ -175,6 +175,11 @@ public class DBConnectionUtils
 		case Database.COMMON_CUSTOMER:
 			connection = DriverManager.getConnection(getURL(dbName), DBConnString.QA.COMMON_CUSTOMER.USERNAME, 
 					DBConnString.QA.COMMON_CUSTOMER.PASSWORD);
+			break;
+		case Database.PARTNER_ACL:
+			connection = DriverManager.getConnection(getURL(dbName), DBConnString.QA.PARTNER_ACL.USERNAME, 
+					DBConnString.QA.PARTNER_ACL.PASSWORD);
+			break;
 		default:
 			log.error("Enter correct Database name");
 			break;
