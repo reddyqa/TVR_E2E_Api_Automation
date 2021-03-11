@@ -8,9 +8,8 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Leasing_Partner_Ranking">
+      <class name="TestCases.Customer_Register_Cognito">
         <methods>
-          <include name="leasing_ranking" invocation-numbers="0 0 0"/>
           <include name="beforClass"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
@@ -18,8 +17,9 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="configure"/>
+          <include name="customer_register_cognito" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- TestCases.Leasing_Partner_Ranking -->
+      </class> <!-- TestCases.Customer_Register_Cognito -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -67,7 +67,6 @@ public class Cust_Create_Json extends BaseSetup {
 						String mobile_no=RestAssuredSetup.generateRandomNumber();
 						context.setAttribute("mobile", mobile_no);
 						cust.setMobile(mobile_no);
-						//excel.setCellData("customer_exists", "mobile", 2, cust.getMobile());
 					}
 										
 				}

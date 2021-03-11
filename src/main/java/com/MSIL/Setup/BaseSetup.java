@@ -40,6 +40,7 @@ public class BaseSetup
 	@BeforeSuite
 	public void setup()
 	{
+		
 		try {
 			FileInputStream fi = new FileInputStream(new File(propertyFilepath));
 			configProperty = new Properties();

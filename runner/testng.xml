@@ -26,8 +26,8 @@
     	</class>
     	<class name="TestCases.Common_Cust_Verify_Otp">
     	</class>
-    	<!-- <class name="TestCases.Customer_Register_Cognito">
-    	</class> -->
+    	<class name="TestCases.Customer_Register_Cognito">
+    	</class>
     	<!-- <class name="TestCases.All_Master_Generic_API">
     	</class> -->
     	<!-- <class name="TestCases.City_Master_API_TC">

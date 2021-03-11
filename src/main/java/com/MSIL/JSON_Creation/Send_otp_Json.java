@@ -43,10 +43,7 @@ public class Send_otp_Json extends BaseSetup
 				t.setAppId(s);
 			}
 		}
-		/*
-		 * String sheetname ="gen_auth_token"; String colname ="mobileNo";
-		 */
-		//excel.setCellData(sheetname, colname, 2, t.getMobileNo());
+		
 		excel.setCellData("gen_auth_token", "mobileNo", 2, t.getMobileNo());
 		Gson gSon = new Gson();
 		jsonString = gSon.toJson(t);

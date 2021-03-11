@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 04 12:35:34 IST 2021</td>
+<td>Started on:</td><td>Tue Mar 09 15:17:15 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14595 ms)</td>
+<tr><td>Total time:</td><td>163 seconds (163615 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,47 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.Customer_Register_Cognito.customer_register_cognito()'><b>customer_register_cognito</b><br>Test class: TestCases.Customer_Register_Cognito<br>Parameters: {uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}</td>
+<td><div><pre>java.lang.IllegalArgumentException: wrong number of arguments
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1232675280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232675280'><pre>java.lang.IllegalArgumentException: wrong number of arguments
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.Customer_Register_Cognito@60129b9a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,35 +116,155 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.Customer_Register_Send_Otp.customer_regsiter_send_otp()'><b>customer_regsiter_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@65f58c6e</td>
+<td title='TestCases.Customer_Register_Send_Otp.customer_regsiter_send_otp()'><b>customer_regsiter_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@3fcbc766</td>
 <td></td>
-<td>2</td>
-<td>TestCases.Customer_Register_Send_Otp@13c9d689</td></tr>
+<td>1</td>
+<td>TestCases.Customer_Register_Send_Otp@d41f816</td></tr>
 <tr>
-<td title='TestCases.Common_Cust_Verify_Otp.customer_verify_otp()'><b>customer_verify_otp</b><br>Test class: TestCases.Common_Cust_Verify_Otp<br>Parameters: {contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/verify}, org.testng.TestRunner@65f58c6e</td>
-<td></td>
-<td>3</td>
-<td>TestCases.Common_Cust_Verify_Otp@3754a4bf</td></tr>
-<tr>
-<td title='TestCases.generateToken.gen_auth_token()'><b>gen_auth_token</b><br>Test class: TestCases.generateToken<br>Parameters: {mobileNo=9814209253, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@65f58c6e</td>
-<td></td>
-<td>2</td>
-<td>TestCases.generateToken@28701274</td></tr>
-<tr>
-<td title='TestCases.Customer_Register_Send_Otp.invalid_mobile_send_otp()'><b>invalid_mobile_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@65f58c6e</td>
+<td title='TestCases.Common_Cust_Verify_Otp.customer_verify_otp()'><b>customer_verify_otp</b><br>Test class: TestCases.Common_Cust_Verify_Otp<br>Parameters: {contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/verify}, org.testng.TestRunner@3fcbc766</td>
 <td></td>
 <td>0</td>
-<td>TestCases.Customer_Register_Send_Otp@13c9d689</td></tr>
+<td>TestCases.Common_Cust_Verify_Otp@5c2375a9</td></tr>
 <tr>
-<td title='TestCases.Leasing_Partner_Ranking.leasing_ranking()'><b>leasing_ranking</b><br>Test class: TestCases.Leasing_Partner_Ranking<br>Parameters: {expectedMessage=, expectedErrorCode=200.0, endpoint=qa/api/partner/leasing-company-rating}, org.testng.TestRunner@65f58c6e</td>
+<td title='TestCases.generateToken.gen_auth_token()'><b>gen_auth_token</b><br>Test class: TestCases.generateToken<br>Parameters: {mobileNo=9452578177, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@3fcbc766</td>
 <td></td>
-<td>2</td>
-<td>TestCases.Leasing_Partner_Ranking@62379589</td></tr>
+<td>4</td>
+<td>TestCases.generateToken@7c8c9a05</td></tr>
+<tr>
+<td title='TestCases.Customer_Register_Send_Otp.invalid_mobile_send_otp()'><b>invalid_mobile_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@3fcbc766</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Customer_Register_Send_Otp@d41f816</td></tr>
+<tr>
+<td title='TestCases.Leasing_Partner_Ranking.leasing_ranking()'><b>leasing_ranking</b><br>Test class: TestCases.Leasing_Partner_Ranking<br>Parameters: {expectedMessage=, expectedErrorCode=200.0, endpoint=qa/api/partner/leasing-company-rating}, org.testng.TestRunner@3fcbc766</td>
+<td></td>
+<td>1</td>
+<td>TestCases.Leasing_Partner_Ranking@78d6692f</td></tr>
 <tr>
 <td title='TestCases.Send_OTP.s_otp()'><b>s_otp</b><br>Test class: TestCases.Send_OTP<br>Parameters: {mobileNo=, appId=4.0, endpoint=qa/sendotp}</td>
 <td></td>
-<td>3</td>
-<td>TestCases.Send_OTP@2b71e916</td></tr>
+<td>2</td>
+<td>TestCases.Send_OTP@26ceffa8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.Customer_Register_Cognito.customer_register_cognito()'><b>customer_register_cognito</b><br>Test class: TestCases.Customer_Register_Cognito<br>Parameters: {uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}, org.testng.TestRunner@3fcbc766</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]&quot;}
+  (Session info: headless chrome=88.0.4324.190)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GURENDERKUSH&apos;, ip: &apos;192.168.43.198&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e787fbacdb1710e938000cae8f0370b6
+*** Element info: {Using=xpath, value=//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.MSIL.Common.Customer.Token.Common_Customer_Token_Generation.token_generation(Common_Customer_Token_Generation.java:42)
+	at com.MSIL.API_LISTS.Common_Customer_Register_Cognito.common_customer_registercognito_API(Common_Customer_Register_Cognito.java:32)
+	at TestCases.Customer_Register_Cognito.customer_register_cognito(Customer_Register_Cognito.java:22)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1247492326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1247492326'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]&quot;}
+  (Session info: headless chrome=88.0.4324.190)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GURENDERKUSH&apos;, ip: &apos;192.168.43.198&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e787fbacdb1710e938000cae8f0370b6
+*** Element info: {Using=xpath, value=//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.MSIL.Common.Customer.Token.Common_Customer_Token_Generation.token_generation(Common_Customer_Token_Generation.java:42)
+	at com.MSIL.API_LISTS.Common_Customer_Register_Cognito.common_customer_registercognito_API(Common_Customer_Register_Cognito.java:32)
+	at TestCases.Customer_Register_Cognito.customer_register_cognito(Customer_Register_Cognito.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>150</td>
+<td>TestCases.Customer_Register_Cognito@60129b9a</td></tr>
+<tr>
+<td title='TestCases.Customer_Register_Cognito.customer_register_cognito()'><b>customer_register_cognito</b><br>Test class: TestCases.Customer_Register_Cognito<br>Parameters: {uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}</td>
+<td><div><pre>java.lang.IllegalArgumentException: wrong number of arguments
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2031373582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2031373582'><pre>java.lang.IllegalArgumentException: wrong number of arguments
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.Customer_Register_Cognito@60129b9a</td></tr>
 </table><p>
 </body>
 </html>

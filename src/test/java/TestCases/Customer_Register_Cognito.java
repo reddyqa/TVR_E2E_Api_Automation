@@ -14,7 +14,7 @@ public class Customer_Register_Cognito extends RestAssuredSetup
 {
 		//@Parameters({ "value" })
 		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
-		public static void customer_register_cognito(Hashtable<String, String>data, ITestContext context)
+		public static void customer_register_cognito(Hashtable<String, String>data, ITestContext context) throws InterruptedException
 		{
 			testLog.get().assignAuthor("Gurender Kumar");
 			testLog.get().assignCategory("Functional Test");
