@@ -34,7 +34,9 @@
     	</class> -->
     	<!-- <class name="TestCases.Car_Model_Ranking">
     	</class> -->
-    	<class name="TestCases.Leasing_Partner_Ranking">
+    	<!-- <class name="TestCases.Leasing_Partner_Ranking">
+    	</class> -->
+    	<class name="TestCases.Fectch_Nearest_Dealer">
     	</class>
      </classes>
   </test> <!-- Test -->

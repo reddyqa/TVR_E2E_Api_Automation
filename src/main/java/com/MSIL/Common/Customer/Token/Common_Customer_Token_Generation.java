@@ -25,8 +25,9 @@ public class Common_Customer_Token_Generation
 	public static String token_generation(Object object) throws InterruptedException
 	{		
 		
+		
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--window-size=1920,1200");
+		options.addArguments("--headless", "--window-size=1920,1200");		 
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
 		driver.get("http://common-customer-login-client-qa.s3-website.ap-south-1.amazonaws.com/otp/login");
@@ -41,7 +42,6 @@ public class Common_Customer_Token_Generation
 		driver.findElement(By.xpath("//button[contains(text(),'Verify OTP')]")).click();
 		Thread.sleep(5000);
 		String access_token = driver.findElement(By.xpath("//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]")).getAttribute("value");
-		//System.out.println("Access_Token : "+access_token);
 		return access_token;
 		
 	}

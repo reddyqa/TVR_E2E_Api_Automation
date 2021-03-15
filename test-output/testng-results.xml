@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="20" total="29" passed="6">
+<testng-results skipped="0" failed="0" ignored="20" total="28" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="163615" started-at="2021-03-09T09:47:15Z" finished-at="2021-03-09T09:49:58Z">
+  <suite name="Suite" duration-ms="61635" started-at="2021-03-15T06:12:16Z" finished-at="2021-03-15T06:13:18Z">
     <groups>
     </groups>
-    <test name="API Test" duration-ms="163615" started-at="2021-03-09T09:47:15Z" finished-at="2021-03-09T09:49:58Z">
+    <test name="API Test" duration-ms="61635" started-at="2021-03-15T06:12:16Z" finished-at="2021-03-15T06:13:18Z">
       <class name="TestCases.Send_OTP">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="setup" is-config="true" duration-ms="132" started-at="2021-03-09T15:17:14Z" finished-at="2021-03-09T15:17:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="setup" is-config="true" duration-ms="145" started-at="2021-03-15T11:42:16Z" finished-at="2021-03-15T11:42:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="configure()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="configure" is-config="true" duration-ms="399" started-at="2021-03-09T15:17:14Z" depends-on-methods="com.MSIL.Setup.BaseSetup.setup" finished-at="2021-03-09T15:17:15Z">
+        <test-method status="PASS" signature="configure()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="configure" is-config="true" duration-ms="420" started-at="2021-03-15T11:42:16Z" depends-on-methods="com.MSIL.Setup.BaseSetup.setup" finished-at="2021-03-15T11:42:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configure -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="beforeTest" is-config="true" duration-ms="4" started-at="2021-03-09T15:17:15Z" finished-at="2021-03-09T15:17:15Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:TestCases.Send_OTP@906d29b]" name="beforeTest" is-config="true" duration-ms="6" started-at="2021-03-15T11:42:16Z" finished-at="2021-03-15T11:42:16Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="beforClass" is-config="true" duration-ms="4" started-at="2021-03-09T15:17:15Z" finished-at="2021-03-09T15:17:15Z">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="beforClass" is-config="true" duration-ms="3" started-at="2021-03-15T11:42:16Z" finished-at="2021-03-15T11:42:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="s_otp(java.util.Hashtable)[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="s_otp" duration-ms="2971" started-at="2021-03-09T15:17:15Z" data-provider="dp" finished-at="2021-03-09T15:17:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:16Z" finished-at="2021-03-15T11:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="s_otp(java.util.Hashtable)[pri:0, instance:TestCases.Send_OTP@906d29b]" name="s_otp" duration-ms="2765" started-at="2021-03-15T11:42:16Z" data-provider="dp" finished-at="2021-03-15T11:42:19Z">
           <params>
             <param index="0">
               <value>
@@ -41,85 +45,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- s_otp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:15Z" finished-at="2021-03-09T15:17:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="afterMethod" is-config="true" duration-ms="385" started-at="2021-03-09T15:17:18Z" finished-at="2021-03-09T15:17:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="afterMethod" is-config="true" duration-ms="306" started-at="2021-03-15T11:42:19Z" finished-at="2021-03-15T11:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.Send_OTP@26ceffa8]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-03-09T15:19:58Z" finished-at="2021-03-09T15:19:58Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.Send_OTP@906d29b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-03-15T11:43:18Z" finished-at="2021-03-15T11:43:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- TestCases.Send_OTP -->
       <class name="TestCases.generateToken">
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.generateToken@7c8c9a05]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:18Z" finished-at="2021-03-09T15:17:18Z">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.generateToken@436bc36]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:19Z" finished-at="2021-03-15T11:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.generateToken@7c8c9a05]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:18Z" finished-at="2021-03-09T15:17:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.generateToken@436bc36]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:19Z" finished-at="2021-03-15T11:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="gen_auth_token(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.generateToken@7c8c9a05]" name="gen_auth_token" duration-ms="4855" started-at="2021-03-09T15:17:18Z" data-provider="dp" finished-at="2021-03-09T15:17:23Z">
+        <test-method status="PASS" signature="gen_auth_token(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.generateToken@436bc36]" name="gen_auth_token" duration-ms="3274" started-at="2021-03-15T11:42:19Z" data-provider="dp" finished-at="2021-03-15T11:42:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{mobileNo=9452578177, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}]]>
+                <![CDATA[{mobileNo=9266786261, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gen_auth_token -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.generateToken@7c8c9a05]" name="afterMethod" is-config="true" duration-ms="73" started-at="2021-03-09T15:17:23Z" finished-at="2021-03-09T15:17:23Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.generateToken@436bc36]" name="afterMethod" is-config="true" duration-ms="59" started-at="2021-03-15T11:42:23Z" finished-at="2021-03-15T11:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- TestCases.generateToken -->
-      <class name="TestCases.Leasing_Partner_Ranking">
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Leasing_Partner_Ranking@78d6692f]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="leasing_ranking(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Leasing_Partner_Ranking@78d6692f]" name="leasing_ranking" duration-ms="1699" started-at="2021-03-09T15:19:57Z" data-provider="dp" finished-at="2021-03-09T15:19:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{expectedMessage=, expectedErrorCode=200.0, endpoint=qa/api/partner/leasing-company-rating}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- leasing_ranking -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Leasing_Partner_Ranking@78d6692f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Leasing_Partner_Ranking@78d6692f]" name="afterMethod" is-config="true" duration-ms="44" started-at="2021-03-09T15:19:58Z" finished-at="2021-03-09T15:19:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- TestCases.Leasing_Partner_Ranking -->
       <class name="TestCases.Customer_Register_Send_Otp">
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="beforClass" is-config="true" duration-ms="1" started-at="2021-03-09T15:17:23Z" finished-at="2021-03-09T15:17:23Z">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:23Z" finished-at="2021-03-15T11:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="customer_regsiter_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="customer_regsiter_send_otp" duration-ms="1201" started-at="2021-03-09T15:17:23Z" data-provider="dp" finished-at="2021-03-09T15:17:24Z">
+        <test-method status="PASS" signature="customer_regsiter_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="customer_regsiter_send_otp" duration-ms="1140" started-at="2021-03-15T11:42:23Z" data-provider="dp" finished-at="2021-03-15T11:42:24Z">
           <params>
             <param index="0">
               <value>
@@ -128,26 +98,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_regsiter_send_otp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:23Z" finished-at="2021-03-09T15:17:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:23Z" finished-at="2021-03-15T11:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="afterMethod" is-config="true" duration-ms="54" started-at="2021-03-09T15:17:24Z" finished-at="2021-03-09T15:17:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="afterMethod" is-config="true" duration-ms="75" started-at="2021-03-15T11:42:24Z" finished-at="2021-03-15T11:42:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:24Z" finished-at="2021-03-09T15:17:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invalid_mobile_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="invalid_mobile_send_otp" duration-ms="843" started-at="2021-03-09T15:17:24Z" data-provider="dp" finished-at="2021-03-09T15:17:25Z">
+        <test-method status="PASS" signature="invalid_mobile_send_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="invalid_mobile_send_otp" duration-ms="663" started-at="2021-03-15T11:42:24Z" data-provider="dp" finished-at="2021-03-15T11:42:25Z">
           <params>
             <param index="0">
               <value>
@@ -156,227 +122,112 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalid_mobile_send_otp -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@d41f816]" name="afterMethod" is-config="true" duration-ms="33" started-at="2021-03-09T15:17:25Z" finished-at="2021-03-09T15:17:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:24Z" finished-at="2021-03-15T11:42:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Send_Otp@5fe1ce85]" name="afterMethod" is-config="true" duration-ms="41" started-at="2021-03-15T11:42:25Z" finished-at="2021-03-15T11:42:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- TestCases.Customer_Register_Send_Otp -->
       <class name="TestCases.Customer_Register_Cognito">
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:26Z" finished-at="2021-03-09T15:17:26Z">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Customer_Register_Cognito@37091312]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:27Z" finished-at="2021-03-15T11:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:26Z" finished-at="2021-03-09T15:17:26Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@37091312]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:27Z" finished-at="2021-03-15T11:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="customer_register_cognito(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="customer_register_cognito" duration-ms="150254" started-at="2021-03-09T15:17:26Z" data-provider="dp" finished-at="2021-03-09T15:19:57Z">
+        <test-method status="PASS" signature="customer_register_cognito(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Cognito@37091312]" name="customer_register_cognito" duration-ms="21665" started-at="2021-03-15T11:42:27Z" data-provider="dp" finished-at="2021-03-15T11:42:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}]]>
+                <![CDATA[{uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=kapil.anand@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]"}
-  (Session info: headless chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GURENDERKUSH', ip: '192.168.43.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e787fbacdb1710e938000cae8f0370b6
-*** Element info: {Using=xpath, value=//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]"}
-  (Session info: headless chrome=88.0.4324.190)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GURENDERKUSH', ip: '192.168.43.198', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GUREND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62200}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e787fbacdb1710e938000cae8f0370b6
-*** Element info: {Using=xpath, value=//body/app-root[1]/app-home[1]/div[1]/div[1]/div[9]/textarea[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.MSIL.Common.Customer.Token.Common_Customer_Token_Generation.token_generation(Common_Customer_Token_Generation.java:42)
-	at com.MSIL.API_LISTS.Common_Customer_Register_Cognito.common_customer_registercognito_API(Common_Customer_Register_Cognito.java:32)
-	at TestCases.Customer_Register_Cognito.customer_register_cognito(Customer_Register_Cognito.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_register_cognito -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="afterMethod" is-config="true" duration-ms="59" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="customer_register_cognito(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="customer_register_cognito" duration-ms="2" started-at="2021-03-09T15:19:57Z" data-provider="dp" finished-at="2021-03-09T15:19:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[wrong number of arguments]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: wrong number of arguments
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customer_register_cognito -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="afterMethod" is-config="true" duration-ms="47" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="customer_register_cognito(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="customer_register_cognito" duration-ms="1" started-at="2021-03-09T15:19:57Z" data-provider="dp" finished-at="2021-03-09T15:19:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=gurender.kush@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[wrong number of arguments]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: wrong number of arguments
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customer_register_cognito -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@60129b9a]" name="afterMethod" is-config="true" duration-ms="52" started-at="2021-03-09T15:19:57Z" finished-at="2021-03-09T15:19:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Customer_Register_Cognito@37091312]" name="afterMethod" is-config="true" duration-ms="55" started-at="2021-03-15T11:42:48Z" finished-at="2021-03-15T11:42:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- TestCases.Customer_Register_Cognito -->
-      <class name="TestCases.Common_Cust_Verify_Otp">
-        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@5c2375a9]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:25Z" finished-at="2021-03-09T15:17:25Z">
+      <class name="TestCases.Fectch_Nearest_Dealer">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:48Z" finished-at="2021-03-15T11:42:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforClass -->
-        <test-method status="PASS" signature="customer_verify_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Common_Cust_Verify_Otp@5c2375a9]" name="customer_verify_otp" duration-ms="920" started-at="2021-03-09T15:17:25Z" data-provider="dp" finished-at="2021-03-09T15:17:26Z">
+        <test-method status="PASS" signature="fetch_nearest_dealer(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="fetch_nearest_dealer" duration-ms="1115" started-at="2021-03-15T11:42:48Z" data-provider="dp" finished-at="2021-03-15T11:42:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedMessage=, expectedErrorCode=200.0, pinCode=324324, longitude=72.454545, citycode=1, endpoint=qa/api/partner/nearest-dealers, distance=50000, latitude=19.11454}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetch_nearest_dealer -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:48Z" finished-at="2021-03-15T11:42:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="afterMethod" is-config="true" duration-ms="60" started-at="2021-03-15T11:42:50Z" finished-at="2021-03-15T11:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="nearest_dealer_not_found(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="nearest_dealer_not_found" duration-ms="28279" started-at="2021-03-15T11:42:50Z" data-provider="dp" finished-at="2021-03-15T11:43:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{expectedMessage=Dealer not found., expectedErrorCode=400, pinCode=324324, longitude=72.454545, citycode=1, endpoint=qa/api/partner/nearest-dealers, distance=50, latitude=19.11454}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nearest_dealer_not_found -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:50Z" finished-at="2021-03-15T11:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Fectch_Nearest_Dealer@66fdec9]" name="afterMethod" is-config="true" duration-ms="62" started-at="2021-03-15T11:43:18Z" finished-at="2021-03-15T11:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestCases.Fectch_Nearest_Dealer -->
+      <class name="TestCases.Common_Cust_Verify_Otp">
+        <test-method status="PASS" signature="beforClass()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@604c5de8]" name="beforClass" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:25Z" finished-at="2021-03-15T11:42:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforClass -->
+        <test-method status="PASS" signature="customer_verify_otp(java.util.Hashtable, org.testng.ITestContext)[pri:0, instance:TestCases.Common_Cust_Verify_Otp@604c5de8]" name="customer_verify_otp" duration-ms="1949" started-at="2021-03-15T11:42:25Z" data-provider="dp" finished-at="2021-03-15T11:42:27Z">
           <params>
             <param index="0">
               <value>
@@ -385,18 +236,18 @@ Session ID: e787fbacdb1710e938000cae8f0370b6
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcbc766]]>
+                <![CDATA[org.testng.TestRunner@67e0ff3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_verify_otp -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@5c2375a9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-09T15:17:25Z" finished-at="2021-03-09T15:17:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@604c5de8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-03-15T11:42:25Z" finished-at="2021-03-15T11:42:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@5c2375a9]" name="afterMethod" is-config="true" duration-ms="44" started-at="2021-03-09T15:17:26Z" finished-at="2021-03-09T15:17:26Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.Common_Cust_Verify_Otp@604c5de8]" name="afterMethod" is-config="true" duration-ms="58" started-at="2021-03-15T11:42:27Z" finished-at="2021-03-15T11:42:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
