@@ -32,10 +32,10 @@
     	</class> -->
     	<!-- <class name="TestCases.City_Master_API_TC">
     	</class> -->
-    	<!-- <class name="TestCases.Car_Model_Ranking">
-    	</class> -->
-    	<class name="TestCases.Leasing_Partner_Ranking">
-    	</class>
+    	<class name="TestCases.Car_Model_Ranking">
+    	</class> 
+    	<!-- <class name="TestCases.Leasing_Partner_Ranking">
+    	</class>-->
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

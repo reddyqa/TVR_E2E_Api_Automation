@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.MSIL.TestUtils.CustomListners"/>
     <listener class-name="com.MSIL.TestUtils.RetryListeners"/>
@@ -8,9 +8,8 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Leasing_Partner_Ranking">
+      <class name="TestCases.Car_Model_Ranking">
         <methods>
-          <include name="leasing_ranking" invocation-numbers="0 0 0"/>
           <include name="beforClass"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
@@ -18,8 +17,9 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="configure"/>
+          <include name="car_basison_ranking" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- TestCases.Leasing_Partner_Ranking -->
+      </class> <!-- TestCases.Car_Model_Ranking -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

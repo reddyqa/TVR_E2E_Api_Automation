@@ -82,5 +82,41 @@ public class Queries extends BaseSetup
             return partnerlogo_id;
       
 	}
+	
+	public static int minprice_payment(String variantcode)
+	{
+		query = "select min(net_monthly_post_gst) from dms_price_mapping "
+				+ "INNER JOIN category_models ON category_models.id=dms_price_mapping.category_model_id where category_models.variant_cd='"+variantcode+"' and CURRENT_DATE between valid_from and valid_to";
+		String min_price = ReadFromDB.getData(Database.PAYMENT, query).get(0);
+		int minprice = Integer.valueOf(min_price);
+		System.out.println("Minimum Price: "+minprice);
+            return Math.round(minprice);
+	}
+	
+	public static String color_mileage_tenure(String variantcode)
+	{
+		query = "select color_type, mileage_code, tenure_id from category_models where id="
+				+ "(select category_model_id from dms_price_mapping where net_monthly_post_gst = ("
+				+ "select min(net_monthly_post_gst) from dms_price_mapping "
+				+ "INNER JOIN "
+				+ "category_models"
+				+ "ON category_models.id=dms_price_mapping.category_model_id"
+				+ "where category_models.variant_cd='"+variantcode+"' and CURRENT_DATE between valid_from and valid_to));";
+		String min_price = ReadFromDB.getData(Database.PAYMENT, query).get(0);
+		System.out.println("color_mileage_tenure: "+min_price);
+            return min_price;
+	}
+	
+	public static String model_master_ranking(String modelCode)
+	{
+		query = "Select ranking from model_master where model_code='"+modelCode+"';";
+		String model_ranking = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
+		System.out.println("Model Ranking: "+model_ranking);
+            return model_ranking;
+	}
+	
+	
+	
+	
 
 }
