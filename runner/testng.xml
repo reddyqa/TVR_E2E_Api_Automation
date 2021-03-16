@@ -14,14 +14,14 @@
     	</class>
     	<!-- <class name="TestCases.verify_vehicle_List">
     	</class> -->
-    	<!-- <class name="TestCases.Customer_Registartion">
-    	</class> -->
-    	<!-- <class name="TestCases.Customer_Update">
-    	</class>-->	
-    	<!-- <class name="TestCases.Customer_Exists">
-    	</class> -->
-    	<!-- <class name="TestCases.Get_Customer_Details">
-    	</class> -->
+    	<class name="TestCases.Customer_Registartion">
+    	</class>
+    	<class name="TestCases.Customer_Update">
+    	</class>	
+    	<class name="TestCases.Customer_Exists">
+    	</class>
+    	<class name="TestCases.Get_Customer_Details">
+    	</class>
     	<class name="TestCases.Customer_Register_Send_Otp">
     	</class>
     	<class name="TestCases.Common_Cust_Verify_Otp">
