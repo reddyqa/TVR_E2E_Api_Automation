@@ -83,14 +83,14 @@ public class Queries extends BaseSetup
       
 	}
 	
-	public static int minprice_payment(String variantcode)
+	public static double minprice_payment(String variantcode)
 	{
 		query = "select min(net_monthly_post_gst) from dms_price_mapping "
 				+ "INNER JOIN category_models ON category_models.id=dms_price_mapping.category_model_id where category_models.variant_cd='"+variantcode+"' and CURRENT_DATE between valid_from and valid_to";
 		String min_price = ReadFromDB.getData(Database.PAYMENT, query).get(0);
-		int minprice = Integer.valueOf(min_price);
-		System.out.println("Minimum Price: "+minprice);
-            return Math.round(minprice);
+		double minprice=Double.valueOf(min_price);
+		System.out.println("Minimum Price: "+min_price +"After Roundoff :"+minprice);
+            return minprice;
 	}
 	
 	public static String color_mileage_tenure(String variantcode)
@@ -115,7 +115,16 @@ public class Queries extends BaseSetup
             return model_ranking;
 	}
 	
-	
+	//Hero Image URL
+	public static String model_hero_image(String modelCode)
+	{
+		query = "select i.image_url from model_image_v2 i INNER JOIN model_master m"
+				+ "ON i.reference_model_fkid=m.hero_reference_model_fkid"
+				+ "where m.model_code='"+modelCode+"';";
+		String Image_URL = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
+		System.out.println("image_URL: "+Image_URL);
+            return Image_URL;
+	}
 	
 	
 

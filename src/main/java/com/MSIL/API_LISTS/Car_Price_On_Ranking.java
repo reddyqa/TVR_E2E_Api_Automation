@@ -5,6 +5,7 @@ import java.util.Hashtable;
 import org.testng.ITestContext;
 
 import com.MSIL.Response.Model_Ranking_response;
+import com.MSIL.Response.Verify_Response_Hero_Image;
 
 import Query.Queries;
 import io.restassured.RestAssured;
@@ -14,6 +15,7 @@ import io.restassured.specification.RequestSpecification;
 public class Car_Price_On_Ranking 
 { 
 	static Model_Ranking_response re=new Model_Ranking_response();
+	static Verify_Response_Hero_Image re_image= new Verify_Response_Hero_Image();
 	
 	@SuppressWarnings({ "unused", "static-access" })
 	public static void car_price_on_ranking_API(Hashtable<String, String> data, ITestContext context)
@@ -29,7 +31,7 @@ public class Car_Price_On_Ranking
 				.get(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;
-		System.out.println("Response car price on basis ranking: "+response.getBody().asString());
+		System.out.println("Response Wrapper API: "+response.getBody().asString());
 		
 		
 		  if(v==200) 
@@ -44,4 +46,35 @@ public class Car_Price_On_Ranking
 		
 	}
 
+	
+	@SuppressWarnings({ "unused", "static-access" })
+	public static void hero_image(Hashtable<String, String> data, ITestContext context)
+	{
+		Queries q = new Queries();
+		RequestSpecification request = RestAssured.given();
+		request.header("Content-Type", "application/json;charset=UTF-8");
+		request.header("x-app-id", "4");
+		request.header("Authorization", context.getAttribute("Authorization"));
+		//System.out.println(context.getAttribute("Authorization"));
+		Response response = request.queryParam("model", data.get("model"))
+				.queryParam("resolution", data.get("hdpi"))
+				.get(data.get("endpoint"));
+		float f = Float.parseFloat(data.get("expectedErrorCode"));
+		int v = (int) f;
+		System.out.println("Response Wrapper API: "+response.getBody().asString());
+		
+		
+		  if(v==200) 
+		  { 
+			  	re_image.verify_Response(response, data.get("expectedMessage")); 
+		  }else 
+		  {
+			//	re.verify_Response_1(response, data.get("expectedMessage")); 
+		  }
+		 
+		 
+		
+	}
+
+	
 }

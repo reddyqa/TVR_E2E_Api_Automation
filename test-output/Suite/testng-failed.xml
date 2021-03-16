@@ -8,18 +8,19 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Car_Model_Ranking">
+      <class name="TestCases.Fectch_Nearest_Dealer">
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
+          <include name="fetch_nearest_dealer"/>
           <include name="beforeMethod"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="configure"/>
-          <include name="car_basison_ranking" invocation-numbers="0 0 0"/>
+          <include name="nearest_dealer_not_found"/>
         </methods>
-      </class> <!-- TestCases.Car_Model_Ranking -->
+      </class> <!-- TestCases.Fectch_Nearest_Dealer -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
