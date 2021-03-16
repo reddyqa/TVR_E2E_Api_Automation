@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.MSIL.TestUtils.CustomListners"/>
     <listener class-name="com.MSIL.TestUtils.RetryListeners"/>
@@ -12,12 +12,13 @@
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
-          <include name="fetch_nearest_dealer" invocation-numbers="0 0 0"/>
+          <include name="fetch_nearest_dealer"/>
           <include name="beforeMethod"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="configure"/>
+          <include name="nearest_dealer_not_found"/>
         </methods>
       </class> <!-- TestCases.Fectch_Nearest_Dealer -->
     </classes>
