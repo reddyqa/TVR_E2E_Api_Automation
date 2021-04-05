@@ -2,6 +2,7 @@ package com.MSIL.API_LISTS;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.ITestContext;
 
 import com.MSIL.JSON_Creation.Cust_Create_Json;
@@ -33,10 +34,10 @@ public class Cust_Regsiration_API
 		int v = (int) f;
 		if(v==201)
 		{
-			re.verify_Response(response, data.get("expectedErrorCode"), data.get("expectedMessage"));
+			re.verify_Response(response, data.get("expectedErrorCode"), data.get("expectedMessage").replaceAll("\\\\", ""));
 		}else
 		{
-			re.verify_Response_1(response, data.get("expectedErrorCode"), data.get("expectedMessage"));
+			re.verify_Response_1(response, data.get("expectedErrorCode"), data.get("expectedMessage").replaceAll("\\\\", ""));
 		}
 		
 	}
@@ -89,16 +90,22 @@ public class Cust_Regsiration_API
 	@SuppressWarnings("static-access")
 	public static void get_customer_details_API(Hashtable<String, String> data, ITestContext context)
 	{
-		Queries q = new Queries();
-		String uuid=q.getUuid();
 		RequestSpecification request = RestAssured.given();
-		String requestBody = ccj_obj.cust_create_json(data,  context);
 		request.header("Content-Type", "application/json;charset=UTF-8");
-		request.header("x-app-id", "4");
-		request.header("Uuid",uuid);
-		request.body(requestBody);
+		request.header("Authorization", context.getAttribute("common_token"));
 		Response response = request.get(data.get("endpoint"));
-		re.verify_Response_getcustomerdetails(response, uuid);
+		re.verify_Response_getcustomerdetails(response);
+		
+	}
+	
+	public static void get_customer_details_uuid_API(Hashtable<String, String> data, ITestContext context)
+	{
+		RequestSpecification request = RestAssured.given();
+		request.header("Content-Type", "application/json");
+		request.header("Authorization", context.getAttribute("common_token"));
+		Response response = request.get(data.get("endpoint"));
+		System.out.println("Response: " +response.body().asString());
+		Assert.assertEquals(response.getStatusCode(), 200);
 		
 	}
 
