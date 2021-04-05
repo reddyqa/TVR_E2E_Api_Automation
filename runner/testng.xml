@@ -13,7 +13,7 @@
     	<class name="TestCases.generateToken">
     	</class>
     	<!-- <class name="TestCases.verify_vehicle_List">
-    	</class> -->
+    	</class>
     	<class name="TestCases.Customer_Registartion">
     	</class>
     	<class name="TestCases.Customer_Update">
@@ -29,15 +29,27 @@
     	<class name="TestCases.Customer_Register_Cognito">
     	</class>
     	<class name="TestCases.All_Master_Generic_API">
-    	</class>
-    	<class name="TestCases.City_Master_API_TC">
+    	</class> -->
+    	<!-- <class name="TestCases.City_Master_API_TC">
     	</class>
     	<class name="TestCases.Car_Model_Ranking">
-    	</class>
+    	</class> 
     	<class name="TestCases.Leasing_Partner_Ranking">
     	</class>
     	<class name="TestCases.Fectch_Nearest_Dealer">
+    	</class>    	
+    	<class name="TestCases.Model_Hero_Image_API_TC">
+    	</class> -->
+    	<!-- <class name="TestCases.City_Master_Number_Plate_TC">
+    	</class> -->
+    	<!-- <class name="TestCases.WhiteList_Ref_isHybrid_TC">
+    	</class> -->
+    	<class name="TestCases.verify_vehicle_List_TC">
     	</class>
+    	
+    	 
+    	
+
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

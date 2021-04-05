@@ -16,7 +16,7 @@ public class City_Master_API_TC extends RestAssuredSetup
 	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
 	public static void city_master(Hashtable<String, String>data, ITestContext context)
 	{
-		testLog.get().assignAuthor("Gurender Kumar");
+		testLog.get().assignAuthor("Neha Jha");
 		testLog.get().assignCategory("Functional Test");
 		testLog.get().info("Verifying Customer exists Response");
 		City_Master_API.city_master_API(data, context);				
