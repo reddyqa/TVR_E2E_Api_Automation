@@ -38,11 +38,11 @@ public class Queries extends BaseSetup
 	}
 	
 	
-	public static List<String> get_customer_exists(String user_uuid)
+	public static String get_customer_exists(String mobile_no)
 	{
-		query = "select mobile, first_name,middle_name, last_name, email,  gender, dob, business_type, occupation_type, referred_by, referral_code from customer_master "+ "where user_uuid= '"+user_uuid+ "';";
-		List<String>list = ReadFromDB.getData(Database.COMMON_CUSTOMER, query);
-		System.out.println(list.get(0));
+		query = "select user_uuid from customer_master where mobile= '"+mobile_no+ "';";
+		String list = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println(list);
 		return list;
 	}
 	
@@ -124,6 +124,46 @@ public class Queries extends BaseSetup
 		String Image_URL = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
 		System.out.println("image_URL: "+Image_URL);
             return Image_URL;
+	}
+	
+	public static String get_customer_address(int id)
+	{
+		query = "select address_master.address_line1 from address_master where id='"+id+"';";
+		String addressline1 = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println("addressline1: "+addressline1);
+            return addressline1;
+	}
+	
+	public static String get_customer_id()
+	{
+		query = "select id from address_master order by id desc limit 1;";
+		String id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println("Customer id: "+id);
+            return id;
+	}
+	
+	public static String get_occupation_code(int occupation_id)
+	{
+		query = "select occupation_type from customer_occupation_details where id ='"+occupation_id+"';";
+		String occupation_Type = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println("occupation_Type: "+occupation_Type);
+        return occupation_Type;
+	}
+	
+	public static String get_occupation_id()
+	{
+		query = "select id from customer_occupation_details order by id desc;";
+		String occupation_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println("occupation_id: "+occupation_id);
+        return occupation_id;
+	}
+	
+	public static String get_uuid_id()
+	{
+		query = "select user_uuid from customer_master where mobile ='8130009677';";
+		String uuid_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+		System.out.println("occupation_id: "+uuid_id);
+        return uuid_id;
 	}
 	
 	

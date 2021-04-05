@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.MSIL.TestUtils.CustomListners"/>
+    <listener class-name="com.MSIL.TestUtils.RetryListeners"/>
+  </listeners>
+  <test name="API Test(failed)">
+    <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Model_Hero_Image_API_TC">
+      <class name="TestCases.SaveCustomerOccupation">
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
-          <include name="car_basison_ranking"/>
           <include name="beforeMethod"/>
+          <include name="get_customer_detail_uuid" invocation-numbers="0 0 0"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="configure"/>
         </methods>
-      </class> <!-- TestCases.Model_Hero_Image_API_TC -->
+      </class> <!-- TestCases.SaveCustomerOccupation -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- API Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
