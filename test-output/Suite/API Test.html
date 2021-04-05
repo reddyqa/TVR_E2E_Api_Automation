@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
 <td>Started on:</td><td>Wed Mar 31 13:25:19 IST 2021</td>
 </tr>
 <tr><td>Total time:</td><td>7 seconds (7711 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 31 14:27:03 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37167 ms)</td>
+>>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,6 +83,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='TestCases.generateToken.gen_auth_token()'><b>gen_auth_token</b><br>Test class: TestCases.generateToken<br>Parameters: {mobileNo=9461190996, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@637c840d</td>
 <td></td>
 <td>3</td>
@@ -89,11 +98,57 @@ function toggleAllBoxes() {
 <td></td>
 <td>0</td>
 <td>TestCases.verify_vehicle_List_TC@71cf1b07</td></tr>
+=======
+<td title='TestCases.Customer_Register_Cognito.customer_register_cognito()'><b>customer_register_cognito</b><br>Test class: TestCases.Customer_Register_Cognito<br>Parameters: {uuid=, mobile=1, businessType=SUBSCRIBE, referralCode=, expectedErrorCode=200, referredBy=, occupationTypeCode=, middleName=Kumar, email=kapil.anand@nagarro.com, expectedMessage=Customer successfully registered, gender=M, dob=1983-10-26, firstName=Gurender, lastName=Kush, endpoint=qa/customer/api/v1/user/register}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>23</td>
+<td>TestCases.Customer_Register_Cognito@f5958c9</td></tr>
+<tr>
+<td title='TestCases.Customer_Register_Send_Otp.customer_regsiter_send_otp()'><b>customer_regsiter_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=1, expectedMessage=Otp sent successfully, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>1</td>
+<td>TestCases.Customer_Register_Send_Otp@477b4cdf</td></tr>
+<tr>
+<td title='TestCases.Common_Cust_Verify_Otp.customer_verify_otp()'><b>customer_verify_otp</b><br>Test class: TestCases.Common_Cust_Verify_Otp<br>Parameters: {contactInfo=1, expectedMessage=null, otp=1, expectedErrorCode=200, endpoint=qa/customer/api/v1/otp/verify}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>1</td>
+<td>TestCases.Common_Cust_Verify_Otp@77c2494c</td></tr>
+<tr>
+<td title='TestCases.generateToken.gen_auth_token()'><b>gen_auth_token</b><br>Test class: TestCases.generateToken<br>Parameters: {mobileNo=9681098619, otp=, appId=4, endpoint=qa/api/account/otp/authtoken}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>3</td>
+<td>TestCases.generateToken@3eb25e1a</td></tr>
+<tr>
+<td title='TestCases.Get_Customer_Details.get_customer_details()'><b>get_customer_details</b><br>Test class: TestCases.Get_Customer_Details<br>Parameters: {expectedMessage=, expectedErrorCode=200, endpoint=qa/customer/api/v1/user/details}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Get_Customer_Details@233795b6</td></tr>
+<tr>
+<td title='TestCases.GetCustomerOccupationById.get_customer_occupation()'><b>get_customer_occupation</b><br>Test class: TestCases.GetCustomerOccupationById<br>Parameters: {expectedMessage=, expectedErrorCode=201, endpoint=qa/customer/api/v1/employment}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>0</td>
+<td>TestCases.GetCustomerOccupationById@3eb738bb</td></tr>
+<tr>
+<td title='TestCases.GetCustomerByUUIDAndOccupationId.get_customer_occupation_UUID_ID()'><b>get_customer_occupation_UUID_ID</b><br>Test class: TestCases.GetCustomerByUUIDAndOccupationId<br>Parameters: {expectedMessage=, expectedErrorCode=201, endpoint=qa/customer/api/v1}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>1</td>
+<td>TestCases.GetCustomerByUUIDAndOccupationId@5bda8e08</td></tr>
+<tr>
+<td title='TestCases.Customer_Register_Send_Otp.invalid_mobile_send_otp()'><b>invalid_mobile_send_otp</b><br>Test class: TestCases.Customer_Register_Send_Otp<br>Parameters: {mobile=, expectedMessage=Please provide valid mobile, expectedErrorCode=400, endpoint=qa/customer/api/v1/otp/register/send}, org.testng.TestRunner@4d178d55</td>
+<td></td>
+<td>0</td>
+<td>TestCases.Customer_Register_Send_Otp@477b4cdf</td></tr>
+>>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
 <tr>
 <td title='TestCases.verify_vehicle_List_TC.verify_list_city_invalid()'><b>verify_list_city_invalid</b><br>Test class: TestCases.verify_vehicle_List_TC<br>Parameters: {channelType=, filterSortOnPostGST=true, variantCode=, toPrice=null, popularity=ASC, startDate=null, endpoint=qa/api/subscribe/vehicle/v2/list, fuelType=, expectedErrorCode=, bodyType=, fromPrice=null, modelCode=SR, tenureId=, resolution=xxhdpi, price=DESC, cityId=, categoryIds=5, transmissionType=, registrationType=BLACK_PLATE, isNew=true, newAddition=ASC, colorType=}, org.testng.TestRunner@637c840d</td>
 <td></td>
+<<<<<<< HEAD
 <td>0</td>
 <td>TestCases.verify_vehicle_List_TC@71cf1b07</td></tr>
+=======
+<td>2</td>
+<td>TestCases.Send_OTP@662ac478</td></tr>
+>>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
 </table><p>
 </body>
 </html>
