@@ -12,16 +12,17 @@ import com.MSIL.TestUtils.DataProviderClass;
 
 
 
-public class verify_vehicle_List extends RestAssuredSetup 
+public class verify_vehicle_List_TC extends RestAssuredSetup 
 {
 	//@Parameters({ "value" })
 	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
 	public void verify_list(Hashtable<String, String>data, ITestContext context)
 	{
 		
-		testLog.get().assignAuthor("Gurender Kumar");
+		testLog.get().assignAuthor("Neha Jha");
 		testLog.get().assignCategory("Functional Test");
 		testLog.get().info("Verifying A002 Response");
+		//Vehicle_List_v2.verify_price_listing(data, context);
 		Vehicle_List_v2.verify_price_listing(data, context.getAttribute("Authorization"));
 		
 	}
@@ -29,7 +30,7 @@ public class verify_vehicle_List extends RestAssuredSetup
 	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
 	public void verify_list_city_invalid(Hashtable<String, String>data, ITestContext context)
 	{
-		testLog.get().assignAuthor("Gurender Kumar");
+		testLog.get().assignAuthor("Neha Jha");
 		testLog.get().assignCategory("Functional Test");
 		testLog.get().info("Verifying A002 Response");
 		Vehicle_List_v2.verify_price_listing_invalidcity(data, context.getAttribute("Authorization"));

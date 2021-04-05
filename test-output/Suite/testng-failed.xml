@@ -8,19 +8,18 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Fectch_Nearest_Dealer">
+      <class name="TestCases.WhiteList_Ref_isHybrid_TC">
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
-          <include name="fetch_nearest_dealer"/>
           <include name="beforeMethod"/>
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="Whitelist_Ref_ishybrid" invocation-numbers="0 0 0"/>
           <include name="configure"/>
-          <include name="nearest_dealer_not_found"/>
         </methods>
-      </class> <!-- TestCases.Fectch_Nearest_Dealer -->
+      </class> <!-- TestCases.WhiteList_Ref_isHybrid_TC -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

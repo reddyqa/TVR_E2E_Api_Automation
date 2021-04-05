@@ -118,13 +118,32 @@ public class Queries extends BaseSetup
 	//Hero Image URL
 	public static String model_hero_image(String modelCode)
 	{
-		query = "select i.image_url from model_image_v2 i INNER JOIN model_master m"
-				+ "ON i.reference_model_fkid=m.hero_reference_model_fkid"
+		query = "select i.image_url from model_image_v2 i INNER JOIN model_master m "
+				+ "ON i.reference_model_fkid=m.hero_reference_model_fkid "
 				+ "where m.model_code='"+modelCode+"';";
 		String Image_URL = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
 		System.out.println("image_URL: "+Image_URL);
             return Image_URL;
 	}
+	
+	//city master number plate
+	public static List<String> city_master_number_plate(String cityId)
+	{
+		query = "select license_plate_code from whitelist_city_Reg_type where city_group_details_ID='"+cityId+"';";
+		List<String> license_plate = ReadFromDB.getData(Database.COMMON_MASTERDATA, query);
+		System.out.println("Number Plate: "+license_plate );
+            return license_plate;
+	}
+	
+	//isHybrid whitelist Ref
+		public static boolean Whitelist_Ref_ishybrid_query(String variantCodes)
+		{
+			query = "select is_hybrid from whitelist_reference_model_v2 where variant_cd='"+variantCodes+"';";
+			String isHybrid = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
+			boolean hybrid_db_res=Boolean.parseBoolean(isHybrid);
+			System.out.println("Hybrid Flag is: "+hybrid_db_res );
+	            return hybrid_db_res;
+		}
 	
 	
 
