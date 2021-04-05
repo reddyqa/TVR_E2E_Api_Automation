@@ -12,7 +12,6 @@
     	</class>
     	<class name="TestCases.generateToken">
     	</class>
-<<<<<<< HEAD
     	<!-- <class name="TestCases.verify_vehicle_List">
     	</class>
     	<class name="TestCases.Customer_Registartion">
@@ -23,19 +22,15 @@
     	</class>
     	<class name="TestCases.Get_Customer_Details">
     	</class>
-=======
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
     	<class name="TestCases.Customer_Register_Send_Otp">
     	</class>
     	<class name="TestCases.Common_Cust_Verify_Otp">
     	</class>
     	<class name="TestCases.Customer_Register_Cognito">
     	</class>
-<<<<<<< HEAD
     	<class name="TestCases.All_Master_Generic_API">
     	</class> -->
     	<!-- <class name="TestCases.City_Master_API_TC">
-=======
     	<!-- <class name="TestCases.verify_vehicle_List">
     	</class> -->
     	<!-- <class name="TestCases.Customer_Registartion">
@@ -71,11 +66,9 @@
     	<!-- <class name="TestCases.UpdateCustomerOccupation">
     	</class> -->
     	<class name="TestCases.GetCustomerOccupationById">
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
     	</class>
     	<class name="TestCases.GetCustomerByUUIDAndOccupationId">
     	</class>
-<<<<<<< HEAD
     	<class name="TestCases.Fectch_Nearest_Dealer">
     	</class>    	
     	<class name="TestCases.Model_Hero_Image_API_TC">
@@ -85,13 +78,7 @@
     	<!-- <class name="TestCases.WhiteList_Ref_isHybrid_TC">
     	</class> -->
     	<class name="TestCases.verify_vehicle_List_TC">
-    	</class>
-    	
-    	 
-    	
-=======
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
-
+    	</class>  	 
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
