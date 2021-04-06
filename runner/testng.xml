@@ -12,8 +12,13 @@
     	</class>
     	<class name="TestCases.generateToken">
     	</class>
-<<<<<<< HEAD
     	<!-- <class name="TestCases.verify_vehicle_List">
+    	</class> -->
+    	<class name="TestCases.Customer_Register_Send_Otp">
+    	</class>
+    	<class name="TestCases.Common_Cust_Verify_Otp">
+    	</class>
+    	<class name="TestCases.Customer_Register_Cognito">
     	</class>
     	<class name="TestCases.Customer_Registartion">
     	</class>
@@ -23,75 +28,44 @@
     	</class>
     	<class name="TestCases.Get_Customer_Details">
     	</class>
-=======
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
-    	<class name="TestCases.Customer_Register_Send_Otp">
-    	</class>
-    	<class name="TestCases.Common_Cust_Verify_Otp">
-    	</class>
-    	<class name="TestCases.Customer_Register_Cognito">
-    	</class>
-<<<<<<< HEAD
     	<class name="TestCases.All_Master_Generic_API">
-    	</class> -->
-    	<!-- <class name="TestCases.City_Master_API_TC">
-=======
-    	<!-- <class name="TestCases.verify_vehicle_List">
-    	</class> -->
-    	<!-- <class name="TestCases.Customer_Registartion">
-    	</class> -->
-    	<!-- <class name="TestCases.Customer_Update">
-    	</class> -->	
-    	<!-- <class name="TestCases.Customer_Exists">
-    	</class> -->
-    	<class name="TestCases.Get_Customer_Details">
     	</class>
-    	<!-- <class name="TestCases.Get_Customer_Detail_BY_UUID">
-    	</class>  --> 	
-    	<!-- <class name="TestCases.All_Master_Generic_API">
-    	</class> -->
-    	<!-- <class name="TestCases.City_Master_API_TC">
-    	</class> -->
-    	<!-- <class name="TestCases.Car_Model_Ranking">
-    	</class> --> 
-    	<!-- <class name="TestCases.Leasing_Partner_Ranking">
-    	</class> -->
-    	<!-- <class name="TestCases.Fectch_Nearest_Dealer">
-    	</class>  -->   	
-    	<!-- <class name="TestCases.Model_Hero_Image_API_TC">
-    	</class>  -->
-    	<!-- <class name="TestCases.Add_Customer_Address">
-    	</class>  -->
-    	<!-- <class name="TestCases.CustomerAddressGet">
-    	</class> -->
-    	<!-- <class name="TestCases.UpdateCustomerAddress">
-    	</class> -->
-    	<!-- <class name="TestCases.SaveCustomerOccupation">
-    	</class> -->
-    	<!-- <class name="TestCases.UpdateCustomerOccupation">
-    	</class> -->
-    	<class name="TestCases.GetCustomerOccupationById">
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
+    	<class name="TestCases.City_Master_API_TC">
     	</class>
-    	<class name="TestCases.GetCustomerByUUIDAndOccupationId">
+    	<class name="TestCases.Get_Customer_Detail_BY_UUID">
+    	</class>  	
+    	<class name="TestCases.All_Master_Generic_API">
     	</class>
-<<<<<<< HEAD
+    	<class name="TestCases.City_Master_API_TC">
+    	</class>
+    	<class name="TestCases.Car_Model_Ranking">
+    	</class> 
+    	<class name="TestCases.Leasing_Partner_Ranking">
+    	</class>
     	<class name="TestCases.Fectch_Nearest_Dealer">
     	</class>    	
     	<class name="TestCases.Model_Hero_Image_API_TC">
-    	</class> -->
-    	<!-- <class name="TestCases.City_Master_Number_Plate_TC">
-    	</class> -->
-    	<!-- <class name="TestCases.WhiteList_Ref_isHybrid_TC">
-    	</class> -->
-    	<class name="TestCases.verify_vehicle_List_TC">
+    	</class> 
+    	<class name="TestCases.Add_Customer_Address">
+    	</class> 
+    	<class name="TestCases.CustomerAddressGet">
     	</class>
-    	
-    	 
-    	
-=======
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
-
+    	<class name="TestCases.UpdateCustomerAddress">
+    	</class>
+    	<class name="TestCases.SaveCustomerOccupation">
+    	</class>
+    	<class name="TestCases.UpdateCustomerOccupation">
+    	</class>
+    	<class name="TestCases.GetCustomerOccupationById">
+    	</class>
+    	<class name="TestCases.GetCustomerByUUIDAndOccupationId">
+    	</class>
+    	<class name="TestCases.City_Master_Number_Plate_TC">
+    	</class>
+    	<class name="TestCases.WhiteList_Ref_isHybrid_TC">
+    	</class>
+    	<class name="TestCases.verify_vehicle_List_TC">
+    	</class>  	 
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

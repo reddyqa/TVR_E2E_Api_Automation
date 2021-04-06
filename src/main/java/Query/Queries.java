@@ -126,7 +126,7 @@ public class Queries extends BaseSetup
             return Image_URL;
 	}
 	
-<<<<<<< HEAD
+
 	//city master number plate
 	public static List<String> city_master_number_plate(String cityId)
 	{
@@ -145,7 +145,6 @@ public class Queries extends BaseSetup
 			System.out.println("Hybrid Flag is: "+hybrid_db_res );
 	            return hybrid_db_res;
 		}
-=======
 	public static String get_customer_address(int id)
 	{
 		query = "select address_master.address_line1 from address_master where id='"+id+"';";
@@ -185,7 +184,7 @@ public class Queries extends BaseSetup
 		System.out.println("occupation_id: "+uuid_id);
         return uuid_id;
 	}
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
+
 	
 	
 

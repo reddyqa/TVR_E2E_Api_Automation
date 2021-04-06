@@ -8,27 +8,92 @@
   <test name="API Test(failed)">
     <parameter name="env" value="QA"/>
     <classes>
-<<<<<<< HEAD
-      <class name="TestCases.WhiteList_Ref_isHybrid_TC">
-=======
-      <class name="TestCases.SaveCustomerOccupation">
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
+      <class name="TestCases.Fectch_Nearest_Dealer">
+        <methods>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="fetch_nearest_dealer" invocation-numbers="0 0 0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+          <include name="nearest_dealer_not_found" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- TestCases.Fectch_Nearest_Dealer -->
+      <class name="TestCases.Customer_Registartion">
+        <methods>
+          <include name="invalid_customer_registration" invocation-numbers="2 2 2 6 6 7 7"/>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+        </methods>
+      </class> <!-- TestCases.Customer_Registartion -->
+      <class name="TestCases.Get_Customer_Detail_BY_UUID">
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
-          <include name="get_customer_detail_uuid" invocation-numbers="0 0 0"/>
-          <include name="setup"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="Whitelist_Ref_ishybrid" invocation-numbers="0 0 0"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+          <include name="get_customer_detail_uuid" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- TestCases.Get_Customer_Detail_BY_UUID -->
+      <class name="TestCases.Customer_Update">
+        <methods>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="invalid_customer_update" invocation-numbers="0 0 0 1 1 2 2"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+          <include name="customer_Update" invocation-numbers="0 0 0 1 1"/>
+        </methods>
+      </class> <!-- TestCases.Customer_Update -->
+      <class name="TestCases.Leasing_Partner_Ranking">
+        <methods>
+          <include name="leasing_ranking" invocation-numbers="0 0 0"/>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
           <include name="configure"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- TestCases.WhiteList_Ref_isHybrid_TC -->
-=======
-      </class> <!-- TestCases.SaveCustomerOccupation -->
->>>>>>> b628d631e40415390140f5b3575c5d9903f2be13
+      </class> <!-- TestCases.Leasing_Partner_Ranking -->
+      <class name="TestCases.Car_Model_Ranking">
+        <methods>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+          <include name="car_basison_ranking" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- TestCases.Car_Model_Ranking -->
+      <class name="TestCases.Model_Hero_Image_API_TC">
+        <methods>
+          <include name="beforClass"/>
+          <include name="afterSuite"/>
+          <include name="car_basison_ranking" invocation-numbers="0 0 0"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="configure"/>
+        </methods>
+      </class> <!-- TestCases.Model_Hero_Image_API_TC -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
