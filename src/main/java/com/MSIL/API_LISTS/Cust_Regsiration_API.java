@@ -50,6 +50,7 @@ public class Cust_Regsiration_API
 		String requestBody = ccj_obj.cust_create_json(data, context);
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("x-app-id", "4");
+		request.header("Authorization", context.getAttribute("common_token"));
 		request.body(requestBody);
 		Response response = request.put(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
