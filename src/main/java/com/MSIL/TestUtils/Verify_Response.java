@@ -27,14 +27,12 @@ public class Verify_Response
 	
 	public static void verify_Response_1(Response str_Reponse, String expected_code, String expected_message)
 	{
-		System.out.println("Expected error msg : "+expected_message);
 		System.out.println("Message: "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
 		List<String> lhmap = new ArrayList<String>();	
 		lhmap = jsonPathEvaluator.get("errors.errorMessage");
-		String error_msg= lhmap.get(0);
-		System.out.println("Error Message: "+error_msg);
 		
+		System.out.println("Error Message: "+lhmap.get(0));
 		Assert.assertEquals(lhmap.get(0), expected_message);
 	}
 	
@@ -91,7 +89,7 @@ public class Verify_Response
 	}
 	
 	@SuppressWarnings({ "static-access", "unused" })
-	public static void verify_Response_getcustomerdetails(Response str_Reponse)
+	public static void verify_Response_getcustomerdetails(Response str_Reponse, String uuid)
 	{
 		System.out.println("Message: "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
@@ -110,8 +108,8 @@ public class Verify_Response
 		lhmap.put("referredBy", jsonPathEvaluator.get("data.referredBy"));
 		lhmap.put("referralCode", jsonPathEvaluator.get("data.referralCode"));
 		lhmap.put("userUuid", jsonPathEvaluator.get("data.userUuid"));
-		String queryResult= q.get_customer_exists(lhmap.get("mobile"));		
-		Assert.assertEquals(lhmap.get("userUuid"),queryResult );
+					
+		Assert.assertEquals(lhmap.get("mobile"), q.get_customer_exists(uuid).get(0));
 		
 	}
 

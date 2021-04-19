@@ -38,11 +38,11 @@ public class Queries extends BaseSetup
 	}
 	
 	
-	public static String get_customer_exists(String mobile_no)
+	public static List<String> get_customer_exists(String user_uuid)
 	{
-		query = "select user_uuid from customer_master where mobile= '"+mobile_no+ "';";
-		String list = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println(list);
+		query = "select mobile, first_name,middle_name, last_name, email,  gender, dob, business_type, occupation_type, referred_by, referral_code from customer_master "+ "where user_uuid= '"+user_uuid+ "';";
+		List<String>list = ReadFromDB.getData(Database.COMMON_CUSTOMER, query);
+		System.out.println(list.get(0));
 		return list;
 	}
 	
@@ -118,74 +118,34 @@ public class Queries extends BaseSetup
 	//Hero Image URL
 	public static String model_hero_image(String modelCode)
 	{
-		query = "select i.image_url from model_image_v2 i INNER JOIN model_master m "
-				+ "ON i.reference_model_fkid=m.hero_reference_model_fkid "
+		query = "select i.image_url from model_image_v2 i INNER JOIN model_master m"
+				+ "ON i.reference_model_fkid=m.hero_reference_model_fkid"
 				+ "where m.model_code='"+modelCode+"';";
 		String Image_URL = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
 		System.out.println("image_URL: "+Image_URL);
             return Image_URL;
 	}
 	
-
-	//city master number plate
-	public static List<String> city_master_number_plate(String cityId)
-	{
-		query = "select license_plate_code from whitelist_city_Reg_type where city_group_details_ID='"+cityId+"';";
-		List<String> license_plate = ReadFromDB.getData(Database.COMMON_MASTERDATA, query);
-		System.out.println("Number Plate: "+license_plate );
-            return license_plate;
-	}
-	
-	//isHybrid whitelist Ref
-		public static boolean Whitelist_Ref_ishybrid_query(String variantCodes)
+	//Whitelist dealer
+		public static List<String> whitelist_leasing_companies(String cityGroupId)
 		{
-			query = "select is_hybrid from whitelist_reference_model_v2 where variant_cd='"+variantCodes+"';";
-			String isHybrid = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
-			boolean hybrid_db_res=Boolean.parseBoolean(isHybrid);
-			System.out.println("Hybrid Flag is: "+hybrid_db_res );
-	            return hybrid_db_res;
+			query = "Select c.partner_id from city_partner_mapping c INNER JOIN whitelist_partner w "
+					+ "on c.partner_id = w.partner_id where c.partner_role = 1 and c.city_group_id ='"+cityGroupId+"';";
+			List <String> Whitelist_Companies = ReadFromDB.getData(Database.PARTNER_ACL, query);
+			System.out.println("Whitelist_Companies: "+Whitelist_Companies);
+	            return Whitelist_Companies;
 		}
-	public static String get_customer_address(int id)
-	{
-		query = "select address_master.address_line1 from address_master where id='"+id+"';";
-		String addressline1 = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println("addressline1: "+addressline1);
-            return addressline1;
-	}
-	
-	public static String get_customer_id()
-	{
-		query = "select id from address_master order by id desc limit 1;";
-		String id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println("Customer id: "+id);
-            return id;
-	}
-	
-	public static String get_occupation_code(int occupation_id)
-	{
-		query = "select occupation_type from customer_occupation_details where id ='"+occupation_id+"';";
-		String occupation_Type = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println("occupation_Type: "+occupation_Type);
-        return occupation_Type;
-	}
-	
-	public static String get_occupation_id()
-	{
-		query = "select id from customer_occupation_details order by id desc;";
-		String occupation_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println("occupation_id: "+occupation_id);
-        return occupation_id;
-	}
-	
-	public static String get_uuid_id()
-	{
-		query = "select user_uuid from customer_master where mobile ='8130009677';";
-		String uuid_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
-		System.out.println("occupation_id: "+uuid_id);
-        return uuid_id;
-	}
-
-	
+		
+		//Subscription Tenure
+				public static List<String> Subscription_tenure(String cityId)
+				{
+					query = "Select DISTINCT c.tenure_id from category_models c INNER JOIN dms_price_mapping d "
+							+ "ON c.id = d.category_model_id where d.net_monthly_post_gst > 0 and "
+							+ "CURRENT_DATE >= d.valid_from and CURRENT_DATE <= d.valid_to and c.city_id ='"+cityId+"' order by tenure_id;";
+					List<String> Subscription_Tenure = ReadFromDB.getData(Database.PAYMENT, query);
+					System.out.println("Subscription_Tenure: "+Subscription_Tenure);
+			            return Subscription_Tenure;
+				}
 	
 
 }

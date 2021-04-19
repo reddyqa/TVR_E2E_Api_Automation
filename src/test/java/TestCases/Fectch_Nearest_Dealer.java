@@ -21,14 +21,15 @@ public class Fectch_Nearest_Dealer extends RestAssuredSetup
 		Fetch_Nearest_Dealer_API.nearest_dealer_API(data, context);			
 	}
 	
-	//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
-		public static void nearest_dealer_not_found (Hashtable<String, String>data, ITestContext context)
-		{
-			testLog.get().assignAuthor("Akhilesh Sharma");
-			testLog.get().assignCategory("Functional Test");
-			testLog.get().info("Verifying Nearest Dealer Response");
-			Fetch_Nearest_Dealer_API.nearest_dealer_API(data, context);			
-		}
+	/*
+	 * //@Parameters({ "value" })
+	 * 
+	 * @Test(dataProviderClass= DataProviderClass.class, dataProvider="dp") public
+	 * static void nearest_dealer_not_found (Hashtable<String, String>data,
+	 * ITestContext context) { testLog.get().assignAuthor("Akhilesh Sharma");
+	 * testLog.get().assignCategory("Functional Test");
+	 * testLog.get().info("Verifying Nearest Dealer Response");
+	 * Fetch_Nearest_Dealer_API.nearest_dealer_API(data, context); }
+	 */
 
 }

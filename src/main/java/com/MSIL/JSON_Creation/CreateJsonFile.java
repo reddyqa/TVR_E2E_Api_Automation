@@ -66,15 +66,11 @@ public class CreateJsonFile extends BaseSetup
 			}else if(key.equals("resolution"))
 			{
 				vl.setResolution(value);
-			}
-			
-			else if(key.equals("isNew"))
+			}else if(key.equals("isNew"))
 			{
 				boolean bool_value = Boolean.parseBoolean(value);
 				vl.setIsNew(bool_value);
-			}
-			
-			else if(key.equals("categoryIds"))
+			}else if(key.equals("categoryIds"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
@@ -93,9 +89,7 @@ public class CreateJsonFile extends BaseSetup
 				}
 				vl.setCategoryIds(arr);
 				}
-			}
-			
-			else if(key.equals("bodyType"))
+			}else if(key.equals("bodyType"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
@@ -224,44 +218,27 @@ public class CreateJsonFile extends BaseSetup
 			{
 				boolean bool_value = Boolean.parseBoolean(value);
 				vl.setFilterSortOnPostGST(bool_value);
-			}
-			
-			else if(key.equals("startDate"))
+			}else if(key.equals("startDate"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
-					vl.setstartDate(null);
+					vl.setStartDate(null);
 				}else
 				{
-					vl.setstartDate(value);
+					vl.setStartDate(value);
 				}
 				
 			}else if(key.equals("forCode"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
-					vl.setforCode(null);
+					vl.setForCode(null);
 				}else
 				{
-					vl.setforCode(value);
+					vl.setForCode(value);
 				}
 				
-			}
-			
-			else if(key.equals("fromDate"))
-			{
-				if(value.equals("null")||value.equals(""))
-				{
-					vl.setfromDate(null);
-				}else
-				{
-					vl.setfromDate(value);
-				}
-				
-			}
-			
-			
-			else if(key.equals("leasingCompCode"))
+			}else if(key.equals("leasingCompCode"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
@@ -272,19 +249,6 @@ public class CreateJsonFile extends BaseSetup
 					leasingcompCode.add(value);
 					vl.setLeasingCompCode(leasingcompCode);
 				}
-			}
-				
-				else if(key.equals("colorCode"))
-				{
-					if(value.equals("null")||value.equals(""))
-					{
-						vl.setcolorCode(null);
-					}else
-					{
-						List<String> colorCode = new ArrayList<String>();
-						colorCode.add(value);
-						vl.setLeasingCompCode(colorCode);
-					}
 				
 			}else if(key.equals("mileageCode"))
 			{

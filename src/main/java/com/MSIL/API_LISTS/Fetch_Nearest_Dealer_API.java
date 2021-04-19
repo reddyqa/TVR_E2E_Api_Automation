@@ -20,7 +20,8 @@ public class Fetch_Nearest_Dealer_API
 		Queries q = new Queries();
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
-		request.header("Authorization", context.getAttribute("common_token"));
+		request.header("x-app-id", "4");
+		//request.header("Authorization", context.getAttribute("common_token"));
 		System.out.println("Autherization is : "+ context.getAttribute("common_token"));
 		Response response = request.queryParam("model", data.get("model"))
 				.queryParam("latitude", data.get("latitude"))
