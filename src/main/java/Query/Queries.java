@@ -56,6 +56,7 @@ public class Queries extends BaseSetup
       
 	}
 	
+	
 	public static String citygroupid()
 	{
 		query = "select city_group_id from city_group_master";
@@ -125,6 +126,15 @@ public class Queries extends BaseSetup
 		System.out.println("image_URL: "+Image_URL);
             return Image_URL;
 	}
+	//city master number plate
+		public static List<String> city_master_number_plate(String cityId)
+		{
+			query = "select license_plate_code from whitelist_city_Reg_type where city_group_details_ID='"+cityId+"';";
+			List<String> license_plate = ReadFromDB.getData(Database.COMMON_MASTERDATA, query);
+			System.out.println("Number Plate: "+license_plate );
+	            return license_plate;
+		}
+
 	
 	//Whitelist dealer
 		public static List<String> whitelist_leasing_companies(String cityGroupId)
@@ -146,6 +156,56 @@ public class Queries extends BaseSetup
 					System.out.println("Subscription_Tenure: "+Subscription_Tenure);
 			            return Subscription_Tenure;
 				}
+				
+				//isHybrid whitelist Ref
+				public static boolean Whitelist_Ref_ishybrid_query(String variantCodes)
+				{
+					query = "select is_hybrid from whitelist_reference_model_v2 where variant_cd='"+variantCodes+"';";
+					String isHybrid = ReadFromDB.getData(Database.SUBSCRIBE_VEHICLE_MANAGEMENT, query).get(0);
+					boolean hybrid_db_res=Boolean.parseBoolean(isHybrid);
+					System.out.println("Hybrid Flag is: "+hybrid_db_res );
+			            return hybrid_db_res;
+				}
+
+				
+		// get customer address
+				public static String get_customer_address(int id)
+				{
+					query = "select address_master.address_line1 from address_master where id='"+id+"';";
+					String addressline1 = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+					System.out.println("addressline1: "+addressline1);
+			            return addressline1;
+				}
+
+		// get occupation code
+				public static String get_occupation_code(int occupation_id)
+				{
+					query = "select occupation_type from customer_occupation_details where id ='"+occupation_id+"';";
+					String occupation_Type = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+					System.out.println("occupation_Type: "+occupation_Type);
+			        return occupation_Type;
+				}
+				
+
+		// get_occupation
+				public static String get_occupation_id()
+				{
+					query = "select id from customer_occupation_details order by id desc;";
+					String occupation_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+					System.out.println("occupation_id: "+occupation_id);
+			        return occupation_id;
+				}
+				
+		//get_uuid_id
+				public static String get_uuid_id()
+				{
+					query = "select user_uuid from customer_master where mobile ='8130009677';";
+					String uuid_id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+					System.out.println("occupation_id: "+uuid_id);
+			        return uuid_id;
+				}
+				
+
 	
 
 }

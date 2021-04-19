@@ -2,6 +2,7 @@ package com.MSIL.API_LISTS;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.ITestContext;
 
 import com.MSIL.JSON_Creation.Cust_Create_Json;
@@ -101,6 +102,17 @@ public class Cust_Regsiration_API
 		re.verify_Response_getcustomerdetails(response, uuid);
 		
 	}
+	public static void get_customer_details_uuid_API(Hashtable<String, String> data, ITestContext context)
+	{
+		RequestSpecification request = RestAssured.given();
+		request.header("Content-Type", "application/json");
+		request.header("Authorization", context.getAttribute("common_token"));
+		Response response = request.get(data.get("endpoint"));
+		System.out.println("Response: " +response.body().asString());
+		Assert.assertEquals(response.getStatusCode(), 200);
+		
+	}
+
 
 
 }
