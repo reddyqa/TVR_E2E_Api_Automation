@@ -22,19 +22,19 @@ public class Verify_Number_plate_Keyword {
 			System.out.println("Message: "+str_Reponse.getBody().asString());
 			JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
 			List<List<Object>> res_data = jsonPathEvaluator.get("data.cityDetails.licensePlateCode");
-			System.out.println(res_data.get(0));
-			int list_size=res_data.get(0).size();
+			System.out.println(res_data.get(0).get(0));
+			int list_size= res_data.get(0).size();
 			
 			List <String> query_res=q.city_master_number_plate(cityId);
 			
 			  if(list_size!=0) 
 			  { 
-				  for(int i=0; i<list_size; i++) 
+				  for(int i=0; i<list_size-1; i++) 
 				  {
 					  String license_plate_code=(String) res_data.get(0).get(i);
 					  System.out.println(license_plate_code);
 					  
-					  for(int j=0; j<query_res.size();j++) {
+					  for(int j=0; j<query_res.size()-1;j++) {
 						  
 						  Assert.assertEquals(license_plate_code, query_res.get(j));
 						  

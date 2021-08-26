@@ -9,7 +9,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 
 public class Send_OTP extends RestAssuredSetup
 {
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 	public void s_otp(Hashtable<String, String>data)
 	{
 		testLog.get().assignAuthor("Gurender Kumar");

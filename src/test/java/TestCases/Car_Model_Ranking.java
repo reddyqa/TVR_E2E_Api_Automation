@@ -10,7 +10,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class Car_Model_Ranking extends RestAssuredSetup
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp",groups= {"Regression"})
 	public static void car_basison_ranking(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Neha Jha");

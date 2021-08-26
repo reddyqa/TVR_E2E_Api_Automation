@@ -13,7 +13,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class Customer_Register_Cognito extends RestAssuredSetup
 {
 		//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 		public static void customer_register_cognito(Hashtable<String, String>data, ITestContext context) throws InterruptedException
 		{
 			testLog.get().assignAuthor("Gurender Kumar");

@@ -13,7 +13,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class Subscription_Tenure_TC extends RestAssuredSetup
 {
 	//@Parameters({ "value" })
-			@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+			@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 			public static void Subscription_tenure(Hashtable<String, String>data, ITestContext context)
 			{
 				testLog.get().assignAuthor("Akhilesh Sharma");

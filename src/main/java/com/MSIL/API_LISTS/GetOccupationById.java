@@ -20,6 +20,7 @@ public class GetOccupationById
 		Queries q = new Queries();
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		request.header("Authorization", context.getAttribute("common_token"));
 		Response response = request.get(data.get("endpoint")+"/"+q.get_occupation_id());
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
@@ -35,6 +36,7 @@ public class GetOccupationById
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json");
 		request.header("Authorization", context.getAttribute("common_token"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		Response response = request.get(data.get("endpoint")+"/"+q.get_uuid_id()+"/employment/"+q.get_occupation_id());
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;

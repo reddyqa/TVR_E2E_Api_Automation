@@ -12,7 +12,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class Common_Cust_Verify_Otp extends RestAssuredSetup
 {
 	//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp",groups= {"Regression", "Smoke", "Sanity"})
 		public static void customer_verify_otp(Hashtable<String, String>data, ITestContext context)
 		{
 			testLog.get().assignAuthor("Gurender Kumar");

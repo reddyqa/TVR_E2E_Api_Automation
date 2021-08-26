@@ -19,6 +19,7 @@ public class Get_Customer_Address
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("Authorization", context.getAttribute("common_token"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		Response response = request.get(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;

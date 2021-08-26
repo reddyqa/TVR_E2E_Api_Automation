@@ -13,7 +13,7 @@ public class Customer_Exists extends RestAssuredSetup
 {
 	
 		//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression"})
 		public static void customer_exists(Hashtable<String, String>data, ITestContext context)
 		{
 			testLog.get().assignAuthor("Gurender Kumar");

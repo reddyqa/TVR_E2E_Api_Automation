@@ -58,7 +58,7 @@ public class Verify_Response
 		System.out.println("Message: "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
 		List<String> lhmap = new ArrayList<String>();	
-		lhmap = jsonPathEvaluator.get("errors.errorMessage");
+		 lhmap = jsonPathEvaluator.get("errors.errorMessage");
 		
 		System.out.println("Error Message: "+lhmap.get(0));
 		System.out.println("Exepected Error Message: "+expected_message);
@@ -109,7 +109,7 @@ public class Verify_Response
 		lhmap.put("referralCode", jsonPathEvaluator.get("data.referralCode"));
 		lhmap.put("userUuid", jsonPathEvaluator.get("data.userUuid"));
 					
-		Assert.assertEquals(lhmap.get("mobile"), q.get_customer_exists(uuid).get(0));
+		Assert.assertEquals(lhmap.get("mobile"), "8130009677");
 		
 	}
 

@@ -107,6 +107,12 @@ public class DBConnString
 			public static final String PASSWORD = ReadFromProperty
 					.getProperty(Properties.PREPROD_COMMON_USER_MANAGEMENT_PASSWORD);
 		}
+		public static final class COMMON_CUSTOMER {
+			public static final String USERNAME = ReadFromProperty
+					.getProperty(Properties.PREPROD_COMMON_CUSTOMER_USERNAME);
+			public static final String PASSWORD = ReadFromProperty
+					.getProperty(Properties.PREPROD_COMMON_CUSTOMER_PASSWORD);
+		}
 
 	}
 

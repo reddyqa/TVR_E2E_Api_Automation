@@ -27,7 +27,8 @@ public class City_Master_API_Number_Plate_Keyword {
 			String requestBody = City_Master_Json.citymaster_create_json(data, context);
 			request.header("Content-Type", "application/json;charset=UTF-8");
 			request.header("x-app-id", "4");
-			request.header("Authorization", context.getAttribute("Authorization"));
+			request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
+			request.header("Authorization", context.getAttribute("common_token"));
 			request.body(requestBody);
 			
 			Response response = request.post(data.get("endpoint"));

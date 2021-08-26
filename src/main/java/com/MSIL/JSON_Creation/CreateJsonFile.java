@@ -102,16 +102,16 @@ public class CreateJsonFile extends BaseSetup
 				}
 				
 				//vl.setBodyType(value);
-			}else if(key.equals("transmissionType"))
+			}else if(key.equals("transmissionCategory"))
 			{
 				if(value.equals("null")||value.equals(""))
 				{
-					vl.setTransmissionType(null);
+					vl.setTransmissionCategory(null);;
 				}else
 				{
-					List<String> transmissionType = new ArrayList<String>();
-					transmissionType.add(value);
-					vl.setTransmissionType(transmissionType);
+					List<String> transmissionCategory = new ArrayList<String>();
+					transmissionCategory.add(value);
+					vl.setTransmissionCategory(transmissionCategory);;
 				}
 			
 				//vl.setTransmissionType(value);

@@ -28,8 +28,18 @@ public class BaseSetup
 	public static ExcelReader excel = new ExcelReader("./testdata/TestData.xlsx");
 	public static Properties config = new Properties();
 	public static ExtentReports extent;
-	public static ThreadLocal<ExtentTest> parentTest= new ThreadLocal<ExtentTest>();
-	public static ThreadLocal<ExtentTest> testLog = new ThreadLocal<ExtentTest>();
+	
+	/*
+	 * public static ThreadLocal<ExtentTest> parentTest= new
+	 * ThreadLocal<ExtentTest>(); public static ThreadLocal<ExtentTest> testLog =
+	 * new ThreadLocal<ExtentTest>();
+	 */
+	 
+	
+	
+	  public static InheritableThreadLocal<ExtentTest> parentTest= new InheritableThreadLocal<ExtentTest>(); 
+	  public static InheritableThreadLocal<ExtentTest> testLog = new InheritableThreadLocal<ExtentTest>();
+	 
 	
 	public Map<String, ExtentTest> map = new HashMap<String, ExtentTest>();
 	
@@ -37,10 +47,10 @@ public class BaseSetup
 	
 	public static String propertyFilepath ="./propertiesFiles/config.properties";
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun=true)
 	public void setup()
 	{
-		
+		log.info("Starting execution of BeforeSuite ");
 		try {
 			FileInputStream fi = new FileInputStream(new File(propertyFilepath));
 			configProperty = new Properties();
@@ -56,25 +66,9 @@ public class BaseSetup
 		}
 		extent = ExtentManager.GetExtent();	
 	}
-	
-	@BeforeClass
-	public void beforClass()
-	{
-		String className = getClass().getName();
-		className= className.substring(className.lastIndexOf(".")+1);
-		ExtentTest parent = extent.createTest(className);
-		parentTest.set(parent);
-		
-	}
-	
-	
-	@BeforeMethod
-	public void beforeMethod()
-	{
-		;
-	}
+
 	@Parameters({ "env" })
-	@BeforeTest
+	@BeforeTest(alwaysRun=true)
 	public void beforeTest(String environment)
 	{
 		log.info("Starting execution ");
@@ -107,6 +101,25 @@ public class BaseSetup
 			break;
 		}
 	}
+	
+	@BeforeClass(alwaysRun=true)
+	public void beforClass()
+	{
+		log.info("Starting execution before class");
+		String className = getClass().getName();
+		className= className.substring(className.lastIndexOf(".")+1);
+		ExtentTest parent = extent.createTest(className);
+		parentTest.set(parent);
+		
+	}
+	
+	
+	@BeforeMethod
+	public void beforeMethod()
+	{
+		;
+	}
+	
 	
 	@AfterMethod
 	public void afterMethod()

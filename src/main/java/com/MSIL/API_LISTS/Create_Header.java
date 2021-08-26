@@ -15,7 +15,8 @@ public class Create_Header
 	{
 		RequestSpecification request = RestAssured.given();
 		CreateJsonFile createjosnObj = new CreateJsonFile();
-		request.header("Authorization", object);
+		//request.header("Authorization", object);
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		request.header("Content-Type", "application/json");
 		request.header("x-app-id", 4);
 		request.body(body.toString());

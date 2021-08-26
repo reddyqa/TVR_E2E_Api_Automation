@@ -11,7 +11,7 @@ public class Vehicle_list {
 	private Boolean isNew;
 	private Long[] categoryIds;
 	private List<String> bodyType;
-	private List<String> transmissionType;
+	private List<String> transmissionCategory;
 	private List<String> fuelType;
 	private List<String> channelType;
 	private List<String> colorType;
@@ -66,12 +66,14 @@ public class Vehicle_list {
 		this.bodyType = bodyType;
 	}
 
-	public List<String> getTransmissionType() {
-		return transmissionType;
+	
+
+	public List<String> getTransmissionCategory() {
+		return transmissionCategory;
 	}
 
-	public void setTransmissionType(List<String> tranmissionType) {
-		this.transmissionType = tranmissionType;
+	public void setTransmissionCategory(List<String> transmissionCategory) {
+		this.transmissionCategory = transmissionCategory;
 	}
 
 	public List<String> getFuelType() {

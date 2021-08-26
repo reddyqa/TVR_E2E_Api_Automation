@@ -19,16 +19,19 @@ public class All_Generic_MasterAPI
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("x-app-id", "4");
-		request.header("Authorization", context.getAttribute("Authorization"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
+		//request.header("Authorization", context.getAttribute("Authorization"));
 		//System.out.println(context.getAttribute("Authorization"));
 		Response response = request.queryParam("model", data.get("model"))
-				.queryParam("variant", data.get("variant"))
-				.queryParam("color", data.get("color"))
-				.queryParam("bodyType", data.get("bodyType"))
-				.queryParam("channelType", data.get("channelType"))
-				.queryParam("registrationType", data.get("registrationType"))
-				.queryParam("transmissionType", data.get("transmissionType"))
-				.queryParam("fuelType", data.get("fuelType"))
+				.queryParam("variant", Boolean.parseBoolean(data.get("variant")))
+				.queryParam("color", Boolean.parseBoolean(data.get("color")))
+				.queryParam("bodyType", Boolean.parseBoolean(data.get("bodyType")))
+				.queryParam("channelType", Boolean.parseBoolean(data.get("channelType")))
+				.queryParam("registrationType", Boolean.parseBoolean(data.get("registrationType")))
+				.queryParam("transmissionType", Boolean.parseBoolean(data.get("transmissionType")))
+				.queryParam("fuelType", Boolean.parseBoolean(data.get("fuelType")))
+				.queryParam("transmissionCategory", Boolean.parseBoolean(data.get("transmissionCategory")))
+				.queryParam("mileage", Boolean.parseBoolean(data.get("mileage")))
 				.get(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;

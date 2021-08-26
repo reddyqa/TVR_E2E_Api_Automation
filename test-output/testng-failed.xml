@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="env" value="PREPROD"/>
   <listeners>
     <listener class-name="com.MSIL.TestUtils.CustomListners"/>
     <listener class-name="com.MSIL.TestUtils.RetryListeners"/>
   </listeners>
   <test name="API Test(failed)">
-    <parameter name="env" value="QA"/>
     <classes>
-      <class name="TestCases.Customer_Register_Cognito">
+      <class name="TestCases.UpdateCustomerOccupation">
         <methods>
           <include name="beforClass"/>
           <include name="afterSuite"/>
@@ -16,10 +16,10 @@
           <include name="setup"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="update_customer_occupation" invocation-numbers="0 0 0"/>
           <include name="configure"/>
-          <include name="customer_register_cognito" invocation-numbers="0 0 0"/>
         </methods>
-      </class> <!-- TestCases.Customer_Register_Cognito -->
+      </class> <!-- TestCases.UpdateCustomerOccupation -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -28,6 +28,7 @@ public class Common_Customer_Register_Cognito
 		String requestBody = ccj_obj.cust_create_json(data, context);
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("x-app-id", "4");
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		request.body(requestBody);
 		context.setAttribute("common_token", common_token.token_generation(context.getAttribute("mobile")));
 		System.out.println("Common_Customer Token value: "+context.getAttribute("common_token"));

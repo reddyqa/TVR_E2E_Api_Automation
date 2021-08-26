@@ -84,10 +84,10 @@ public class Queries extends BaseSetup
       
 	}
 	
-	public static double minprice_payment(String variantcode)
+	public static double minprice_payment(String variantcode, String city_id)
 	{
 		query = "select min(net_monthly_post_gst) from dms_price_mapping "
-				+ "INNER JOIN category_models ON category_models.id=dms_price_mapping.category_model_id where category_models.variant_cd='"+variantcode+"' and CURRENT_DATE between valid_from and valid_to";
+				+ "INNER JOIN category_models ON category_models.id=dms_price_mapping.category_model_id where category_models.variant_cd='"+variantcode+"' and category_models.city_id='"+city_id+"' and CURRENT_DATE between valid_from and valid_to";
 		String min_price = ReadFromDB.getData(Database.PAYMENT, query).get(0);
 		double minprice=Double.valueOf(min_price);
 		System.out.println("Minimum Price: "+min_price +"After Roundoff :"+minprice);
@@ -165,6 +165,14 @@ public class Queries extends BaseSetup
 					boolean hybrid_db_res=Boolean.parseBoolean(isHybrid);
 					System.out.println("Hybrid Flag is: "+hybrid_db_res );
 			            return hybrid_db_res;
+				}
+			//get customer address	
+				public static String get_customer_id()
+				{
+				query = "select id from address_master order by id desc limit 1;";
+				String id = ReadFromDB.getData(Database.COMMON_CUSTOMER, query).get(0);
+				System.out.println("Customer id: "+id);
+				return id;
 				}
 
 				

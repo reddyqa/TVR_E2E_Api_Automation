@@ -22,7 +22,8 @@ public class Subscription_Tenure_API {
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		//request.header("x-app-id", "4");
-		request.header("Authorization", context.getAttribute("Authorization"));
+		request.header("Authorization", context.getAttribute("common_token"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		//System.out.println(context.getAttribute("Authorization"));
 		Response response = request.queryParam("cityId", data.get("cityId"))
 				.get(data.get("endpoint"));

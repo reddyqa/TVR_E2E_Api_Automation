@@ -17,8 +17,8 @@ public class RestAssuredSetup extends BaseSetup
 	public void configure()
 	{
 		/*------------SIT Environment-----------------*/
-		RestAssured.baseURI = "https://dy8338njja.execute-api.ap-south-1.amazonaws.com/";
-		//RestAssured.baseURI = 
+		//RestAssured.baseURI = "https://dy8338njja.execute-api.ap-south-1.amazonaws.com/qa/";
+		RestAssured.baseURI = "https://d1x3uucz02lohy.cloudfront.net";
 	}
 	
 	public static  String generateRandomNumber() {

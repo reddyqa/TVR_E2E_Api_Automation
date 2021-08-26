@@ -59,9 +59,16 @@ public class Cust_Create_Json extends BaseSetup {
 				if (value.equals("null") || value.equals("")) {
 					cust.setMobile(null);
 				} else {
-					if(map.get("endpoint").equals("qa/customer/api/v1/exists"))
+					if(map.get("endpoint").equals("/customer/api/v1/exists"))
 					{
-						cust.setMobile(value);
+						if(value.length()>=2)
+						{
+							cust.setMobile(value);
+						}else
+						{
+							cust.setMobile((String) context.getAttribute("mobile"));
+						}
+						
 					}else
 					{
 						String mobile_no=RestAssuredSetup.generateRandomNumber();

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="1" >
+
 <listeners>
 <listener class-name="com.MSIL.TestUtils.CustomListners"></listener>
 <listener class-name="com.MSIL.TestUtils.RetryListeners"></listener>
 </listeners>
-  <test thread-count="5" name="API Test"> 
-  <parameter name="env" value="QA"/>
-     <classes>
-    	<class name="TestCases.Send_OTP">
-    	</class>
-    	<class name="TestCases.generateToken">
-    	</class>
-    	<!-- <class name="TestCases.verify_vehicle_List">
-    	</class> -->
-    	<class name="TestCases.Customer_Register_Send_Otp">
+<parameter name="env" value="PREPROD"/>
+<test name="API Test"> 
+ <!-- <parameter name="env" value="QA"/> -->
+ <!--  <groups>
+ 	<run>
+ 		<include name="Smoke"/>
+  	</run>
+ </groups> -->
+<classes> 
+    	<!-- <class name="TestCases.Customer_Register_Send_Otp">
     	</class>
     	<class name="TestCases.Common_Cust_Verify_Otp">
     	</class>
@@ -26,7 +27,7 @@
     	</class>	
     	<class name="TestCases.Customer_Exists">
     	</class>
-    	<class name="TestCases.Get_Customer_Details">
+    	 <class name="TestCases.Get_Customer_Details">
     	</class>
     	<class name="TestCases.All_Master_Generic_API">
     	</class>
@@ -34,9 +35,9 @@
     	</class>
     	<class name="TestCases.Get_Customer_Detail_BY_UUID">
     	</class>  	
-    	<class name="TestCases.All_Master_Generic_API">
+    	<class name="TestCases.All_Master_Generic_API"> 
     	</class>
-    	<class name="TestCases.City_Master_API_TC">
+    	<class name="TestCases.City_Master_API_TC"> 
     	</class>
     	<class name="TestCases.Car_Model_Ranking">
     	</class> 
@@ -55,25 +56,25 @@
     	<class name="TestCases.SaveCustomerOccupation">
     	</class>
     	<class name="TestCases.UpdateCustomerOccupation">
-    	</class>
+    	</class> 
     	<class name="TestCases.GetCustomerOccupationById">
     	</class>
-    	<class name="TestCases.GetCustomerByUUIDAndOccupationId">
+    	<class name="TestCases.GetCustomerByUUIDAndOccupationId"> 
     	</class>
     	<class name="TestCases.City_Master_Number_Plate_TC">
     	</class>
-    	<class name="TestCases.WhiteList_Ref_isHybrid_TC">
-    	</class>
+    	<class name="TestCases.WhiteList_Ref_isHybrid_TC">  
+    	</class> -->
     	<class name="TestCases.verify_vehicle_List_TC">
     	</class> 
-    	<class name="TestCases.Get_Whitelist_TC">
-    	</class> 
+    	<!-- <class name="TestCases.Get_Whitelist_TC">
+    	</class>  
     	<class name="TestCases.Subscription_Tenure_TC">
     	</class>
     	<class name="TestCases.Vehicle_Configure_TC">
     	</class>
     	<class name="TestCases.Vehicle_Details_TC">
-    	</class>
+    	</class> -->
 
 
      </classes>

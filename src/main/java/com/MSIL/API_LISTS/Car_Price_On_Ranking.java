@@ -24,11 +24,12 @@ public class Car_Price_On_Ranking
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("x-app-id", "4");
-		request.header("Authorization", context.getAttribute("Authorization"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
+		//request.header("Authorization", context.getAttribute("common_token"));
 		//System.out.println(context.getAttribute("Authorization"));
 		Response response = request.queryParam("model", data.get("model"))
-				.queryParam("resolution", data.get("hdpi"))
-				.get(data.get("endpoint"));
+				.queryParam("resolution", data.get("resolution"))
+				.get(data.get("endpoint")+"/"+data.get("city"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;
 		System.out.println("Response Wrapper API: "+response.getBody().asString());
@@ -36,7 +37,7 @@ public class Car_Price_On_Ranking
 		
 		  if(v==200) 
 		  { 
-			  	re.verify_Response(response, data.get("expectedMessage")); 
+			  	re.verify_Response(response, data.get("expectedMessage"), data.get("city")); 
 		  }else 
 		  {
 			//	re.verify_Response_1(response, data.get("expectedMessage")); 
@@ -54,11 +55,12 @@ public class Car_Price_On_Ranking
 		RequestSpecification request = RestAssured.given();
 		request.header("Content-Type", "application/json;charset=UTF-8");
 		request.header("x-app-id", "4");
-		request.header("Authorization", context.getAttribute("Authorization"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
+		//request.header("Authorization", context.getAttribute("common_token"));
 		//System.out.println(context.getAttribute("Authorization"));
 		Response response = request.queryParam("model", data.get("model"))
-				.queryParam("resolution", data.get("hdpi"))
-				.get(data.get("endpoint"));
+				.queryParam("resolution", data.get("resolution"))
+				.get(data.get("endpoint")+"/"+data.get("city"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;
 		System.out.println("Response Wrapper API: "+response.getBody().asString());

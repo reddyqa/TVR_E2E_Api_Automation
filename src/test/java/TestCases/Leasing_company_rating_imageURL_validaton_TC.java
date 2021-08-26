@@ -11,7 +11,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 
 public class Leasing_company_rating_imageURL_validaton_TC extends RestAssuredSetup {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression"})
 	public static void car_basison_ranking(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Neha Jha");

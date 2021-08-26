@@ -19,26 +19,28 @@ static Map<String, String> object = new HashMap<String, String>();
 	{
 		System.out.println("Response of all vehicle details:  "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
-		List<Object> res_data = jsonPathEvaluator.get("data");
-		System.out.println(res_data);
+		//List<Object> res_data = jsonPathEvaluator.get("data.cityId");
+		//System.out.println(res_data.size());
+		//Map<String, String> lhmap = jsonPathEvaluator.getMap("data[0]");
+		//String cityId = lhmap.get("cityId");
 		
-		
-		
-		
-		  	/*
-			 * if(res_data.size()!=0) { for(int i=0; i<res_data.size(); i++) { object
-			 * =(Map<String, String>) res_data.get(i); String Whitelist_Companies =
-			 * String.valueOf(object.get("partnerList"));
-			 * System.out.println(Whitelist_Companies); //Assert.assertEquals(image_url,
-			 * //q.minprice_payment(object.get("variantCode"))); }
-			 */ /*
-				 * }
-				 * 
-				 * 
-				 * 
-				 * }
-				 */
-
-}}
-
+	        List<Object> res_data = jsonPathEvaluator.get("data");
+	        //System.out.println(res_data.size());
+	        
+	          if(res_data.size()!=0) { for(int i=0; i<res_data.size(); i++) 
+	          { 
+	          object =(Map<String, String>) res_data.get(i);
+	          
+	          String cityID = String.valueOf(object.get("cityId"));
+	          String [] CityID=cityID.split("/");
+	          System.out.println(CityID);
+	          
+	          //Assert.assertEquals(image[8],q.model_hero_image(object.get("modelCode")));
+	          
+	          }
+	          
+	          }
+	        
+	    
+	    }}
 

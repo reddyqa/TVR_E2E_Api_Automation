@@ -11,7 +11,7 @@ public class WhiteList_Ref_isHybrid_TC  extends RestAssuredSetup
 
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 	public static void Whitelist_Ref_ishybrid(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Neha Jha");

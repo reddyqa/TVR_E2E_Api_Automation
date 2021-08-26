@@ -15,7 +15,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class verify_vehicle_List_TC extends RestAssuredSetup 
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 	public void verify_list(Hashtable<String, String>data, ITestContext context)
 	{
 		
@@ -23,7 +23,8 @@ public class verify_vehicle_List_TC extends RestAssuredSetup
 		testLog.get().assignCategory("Functional Test");
 		testLog.get().info("Verifying A002 Response");
 		//Vehicle_List_v2.verify_price_listing(data, context);
-		Vehicle_List_v2.verify_price_listing(data, context.getAttribute("Authorization"));
+		//Vehicle_List_v2.verify_price_listing(data, context.getAttribute("common_token"));
+		Vehicle_List_v2.verify_price_listing(data, context.getAttribute("common_token"));
 		
 	}
 	//@Parameters({ "value" })

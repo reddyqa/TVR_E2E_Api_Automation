@@ -13,7 +13,7 @@ public class Leasing_Partner_Ranking extends RestAssuredSetup
 {
 	
 		//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression"})
 		public static void leasing_ranking(Hashtable<String, String>data, ITestContext context)
 		{
 			testLog.get().assignAuthor("Neha Jha");

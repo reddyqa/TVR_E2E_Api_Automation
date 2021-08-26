@@ -43,9 +43,9 @@ public class Vehicle_List_v2
 		
 		lhmap = jsonPathEvaluator.get("data");
 		
-		List<T> p_tenure = lhmap.get("possibleTenures");
+		int p_tenure = jsonPathEvaluator.get("data.tenure");
 		
-		System.out.println("Data body: "+p_tenure.get(0));
+		System.out.println("Data body: "+p_tenure);
 		
 		
 		  Set set = lhmap.entrySet();

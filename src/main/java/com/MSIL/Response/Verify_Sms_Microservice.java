@@ -1,17 +1,15 @@
 package com.MSIL.Response;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import Query.Queries;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class Verify_Vehicle_Configure {
+public class Verify_Sms_Microservice {
+	
 static Map<String, String> object = new HashMap<String, String>();
 
 	
@@ -22,17 +20,8 @@ static Map<String, String> object = new HashMap<String, String>();
 		System.out.println("Response of all possible values:  "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
 		List<Object> res_data = jsonPathEvaluator.get("data");
-		List<Object> abc = (List<Object>) res_data.get(0);
-		System.out.println(abc);
-		LinkedHashMap<Object,String> hm=new LinkedHashMap<Object,String>();
-		hm = jsonPathEvaluator.get("data");
+		System.out.println(res_data);
 		
-		Set<Object> configure = hm.keySet();
-		System.out.println(hm.get("categories"));
-		
-		//for(Map.Entry m:hm.entrySet()){  
-			   //System.out.println(m.getKey()+" "+m.getValue());  
-			  }  
 		
 		
 		
@@ -49,5 +38,7 @@ static Map<String, String> object = new HashMap<String, String>();
 				 * 
 				 * }
 				 */
+
+}
 
 }

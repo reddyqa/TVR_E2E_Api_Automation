@@ -13,7 +13,7 @@ public class City_Master_Number_Plate_TC extends RestAssuredSetup
 
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
 	public static void city_master(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Neha Jha");

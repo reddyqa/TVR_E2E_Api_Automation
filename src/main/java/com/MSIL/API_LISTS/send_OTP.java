@@ -23,6 +23,7 @@ public class send_OTP
 		String reqBody = jsonObj.send_otp(data);
 		System.out.println("The request body is: "+reqBody);
 		request.header("Content-Type", "application/json;charset=UTF-8");
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		request.header("x-app-id", "4");
 		request.header("x-mac-id", "1");
 		request.body(reqBody);		

@@ -13,7 +13,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class GetCustomerOccupationById extends RestAssuredSetup
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression"})
 	public static void get_customer_occupation(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Gurender Kumar");

@@ -22,6 +22,7 @@ public class Customer_Address_Add
 		RequestSpecification request = RestAssured.given();
 		String requestbody = custAdd.customer_address_json(data);
 		request.header("Content-Type", "application/json;charset=UTF-8");
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 		request.header("Authorization", context.getAttribute("common_token"));
 		request.body(requestbody);
 		Response response = request.post(data.get("endpoint"));

@@ -17,7 +17,7 @@ public class Model_Ranking_response {
 	
 	static Queries q = new Queries();
 	@SuppressWarnings({ "static-access", "unchecked" })
-	public static void verify_Response(Response str_Reponse,  String expected_message)
+	public static void verify_Response(Response str_Reponse,  String expected_message, String city_id)
 	{
 		System.out.println("Message: "+str_Reponse.getBody().asString());
 		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
@@ -34,7 +34,7 @@ public class Model_Ranking_response {
 			System.out.println(actual_price);
 			double actualprice = Math.round(Double.valueOf(actual_price));
 			System.out.println(actualprice);
-			Assert.assertEquals(actualprice, q.minprice_payment(object.get("variantCode")));
+			Assert.assertEquals(actualprice, q.minprice_payment(object.get("variantCode"), city_id));
 		}
 
 		}

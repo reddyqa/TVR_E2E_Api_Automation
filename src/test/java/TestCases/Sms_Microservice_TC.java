@@ -5,20 +5,21 @@ import java.util.Hashtable;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
-import com.MSIL.API_LISTS.Get_Customer_Address;
+import com.MSIL.API_LISTS.Sms_Microservice_API;
 import com.MSIL.Setup.RestAssuredSetup;
 import com.MSIL.TestUtils.DataProviderClass;
 
-public class CustomerAddressGet extends RestAssuredSetup
-{
+public class Sms_Microservice_TC extends RestAssuredSetup{
+
 	//@Parameters({ "value" })
 	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression", "Smoke", "Sanity"})
-	public static void get_customer_address(Hashtable<String, String>data, ITestContext context)
+	public static void Vehicle_configure(Hashtable<String, String>data, ITestContext context)
 	{
-		testLog.get().assignAuthor("Gurender Kumar");
+		testLog.get().assignAuthor("Akhilesh Sharma");
 		testLog.get().assignCategory("Functional Test");
-		testLog.get().info("Verifying Add Customer Address Response");
-		Get_Customer_Address.get_customer_address_API(data, context);				
+		testLog.get().info("Sms Microservice");
+		Sms_Microservice_API.generic_master_API(data, context);;			
 	}
+ {
 
-}
+ }}

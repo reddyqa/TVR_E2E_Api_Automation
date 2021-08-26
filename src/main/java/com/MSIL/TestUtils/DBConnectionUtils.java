@@ -216,6 +216,11 @@ public class DBConnectionUtils
 			connection = DriverManager.getConnection(getURL(dbName), DBConnString.PREPROD.COMMON_MASTERDATA.USERNAME,
 					DBConnString.PREPROD.COMMON_MASTERDATA.PASSWORD);
 			break;
+			
+		case Database.COMMON_CUSTOMER:
+			connection = DriverManager.getConnection(getURL(dbName), DBConnString.PREPROD.COMMON_CUSTOMER.USERNAME, 
+					DBConnString.PREPROD.COMMON_CUSTOMER.PASSWORD);
+			break;
 		case Database.COMMON_USER_MANAGEMENT:
 			connection = DriverManager.getConnection(getURL(dbName), DBConnString.PREPROD.COMMON_USER_MANAGEMENT.USERNAME,
 					DBConnString.PREPROD.COMMON_USER_MANAGEMENT.PASSWORD);

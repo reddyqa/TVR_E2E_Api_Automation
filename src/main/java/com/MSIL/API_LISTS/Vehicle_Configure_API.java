@@ -20,26 +20,29 @@ public class Vehicle_Configure_API {
 		Vehicle_Configure_JSON vehicle_json = new Vehicle_Configure_JSON();
 		Queries q = new Queries();
 		RequestSpecification request = RestAssured.given();
-		String requestBody = vehicle_json.vehicle_configure(data, context);
+		String requestBody = vehicle_json.vehicle_configure(data);
 		request.header("Content-Type", "application/json;charset=UTF-8");
-		request.header("Accept", "application/json");
-		request.header("Authorization", context.getAttribute("common_token"));
+		request.header("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
+		//request.header("Accept", "application/json");
+		//request.header("Authorization", context.getAttribute("common_token"));
 		request.body(requestBody);
 		//System.out.println(context.getAttribute("Authorization"));
-		Response response = request.get(data.get("endpoint"));
+		Response response = request.post(data.get("endpoint"));
 		float f = Float.parseFloat(data.get("expectedErrorCode"));
 		int v = (int) f;
 		System.out.println("Response of all possible values: "+response.getBody().asString());
 		
-		/*
-		 * if(v==200) { re.verify_Response(response,
-		 * data.get("expectedErrorCode"),data.get("expectedMessage")); }else {
-		 * re.verify_Response_1(response, data.get("expectedErrorCode"),
-		 * data.get("expectedMessage")); }
-		 */
+		
+		  //if(v==200)
+		  //{ 
+			 // re.verify_Response(response, data.get("expectedMessage")); }
+		  //else 
+		  //{
+		      //re.verify_Response_1(response, data.get("expectedErrorCode"), data.get("expectedMessage")); }
+		 
 		 
 		
 	}
 
 
-}
+	}

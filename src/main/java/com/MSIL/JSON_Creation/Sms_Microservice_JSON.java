@@ -4,22 +4,18 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.testng.ITestContext;
-
+import com.MSIL.POJO.Sms_Microservice_POJO;
 import com.MSIL.POJO.Vehicle_Configure_POJO;
-import com.MSIL.Setup.BaseSetup;
 import com.google.gson.Gson;
 
-public class Vehicle_Configure_JSON extends BaseSetup
-{
-	@SuppressWarnings({ "rawtypes"})
-	public static String vehicle_configure(Hashtable<String, String> map) {
+public class Sms_Microservice_JSON {
+
+	public String Sms_microservice(Hashtable<String, String> map) {
 		String jsonString = null;
+		Sms_Microservice_POJO Sms_Microservice = new Sms_Microservice_POJO();
 		Vehicle_Configure_POJO Vehicle_Configure = new Vehicle_Configure_POJO();
-		
-		/* extract read the value from excel */
-		Set keys = map.keySet();
-		Iterator itr = keys.iterator();
+		Set<String> keys = map.keySet();
+		Iterator<String> itr = keys.iterator();
 		String key;
 		String value;
 	
@@ -29,17 +25,17 @@ public class Vehicle_Configure_JSON extends BaseSetup
 			value = map.get(key);
 			System.out.println(key + " - " + value);
 
-			if (key.equals("model")) {
+			if (key.equals("phonenumber")) {
 				if (value.equals("null") || value.equals("")) {
-					Vehicle_Configure.setmodel(null);
+					Sms_Microservice.setphonenumber(null);
 				} else {
-					Vehicle_Configure.setmodel(value);
+					Sms_Microservice.setphonenumber(value);
 				}
-			} else if (key.equals("variant")) {
+			} else if (key.equals("templateId")) {
 				if (value.equals("null") || value.equals("")) {
-					Vehicle_Configure.setvariant(null);
+					Sms_Microservice.settemplateId(null);
 				} else {
-					Vehicle_Configure.setvariant(value);
+					Sms_Microservice.settemplateId(value);
 				}
 			} else if (key.equals("city")) {
 				if (value.equals("null") || value.equals("")) {
@@ -59,18 +55,7 @@ public class Vehicle_Configure_JSON extends BaseSetup
 				} else {
 					Vehicle_Configure.setcolorType(value);										
 				}
-			} else if (key.equals("mileage")) {
-				if (value.equals("null") || value.equals("")) {
-					Vehicle_Configure.setmileage(null);
-				} else {
-					Vehicle_Configure.setcolorType(value);										
-				}
-			} else if (key.equals("category")) {
-				if (value.equals("null") || value.equals("")) {
-					Vehicle_Configure.setcategory(null);
-				} else {
-					Vehicle_Configure.setcolorType(value);										
-				}
+			
 			} else if (key.equals("leasingCompany")) {
 				if (value.equals("null") || value.equals("")) {
 					Vehicle_Configure.setleasingCompany(null);
@@ -88,4 +73,6 @@ public class Vehicle_Configure_JSON extends BaseSetup
 		System.out.println(jsonString);
 		return jsonString;
 	}
+	
+
 }

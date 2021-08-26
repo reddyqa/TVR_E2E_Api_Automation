@@ -12,7 +12,7 @@ import com.MSIL.TestUtils.DataProviderClass;
 public class Customer_Register_Send_Otp extends RestAssuredSetup
 {
 	//@Parameters({ "value" })
-	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+	@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp",groups= {"Regression", "Smoke", "Sanity"})
 	public static void customer_regsiter_send_otp(Hashtable<String, String>data, ITestContext context)
 	{
 		testLog.get().assignAuthor("Gurender Kumar");
@@ -22,7 +22,7 @@ public class Customer_Register_Send_Otp extends RestAssuredSetup
 	}
 	
 	//@Parameters({ "value" })
-		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp")
+		@Test(dataProviderClass= DataProviderClass.class, dataProvider="dp", groups= {"Regression"})
 		public static void invalid_mobile_send_otp(Hashtable<String, String>data, ITestContext context)
 		{
 			testLog.get().assignAuthor("Gurender Kumar");
