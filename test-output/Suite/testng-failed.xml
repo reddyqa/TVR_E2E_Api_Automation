@@ -8,18 +8,12 @@
   </listeners>
   <test name="API Test(failed)">
     <classes>
-      <class name="TestCases.UpdateCustomerOccupation">
+      <class name="TestCases.MSIL_Registration_price">
         <methods>
-          <include name="beforClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="update_customer_occupation" invocation-numbers="0 0 0"/>
+          <include name="msil" invocation-numbers="0 0 0"/>
           <include name="configure"/>
         </methods>
-      </class> <!-- TestCases.UpdateCustomerOccupation -->
+      </class> <!-- TestCases.MSIL_Registration_price -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

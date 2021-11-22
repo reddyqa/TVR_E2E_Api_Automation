@@ -15,7 +15,7 @@
   	</run>
  </groups> -->
 <classes> 
-    	<class name="TestCases.Customer_Register_Send_Otp">
+    	<!-- <class name="TestCases.Customer_Register_Send_Otp">
     	</class>
     	<class name="TestCases.Common_Cust_Verify_Otp">
     	</class>
@@ -74,6 +74,10 @@
     	<class name="TestCases.Vehicle_Configure_TC">
     	</class>
     	<class name="TestCases.Vehicle_Details_TC">
+    	</class> -->
+    	<class name="TestCases.Registration_Price_Detail">
+    	</class>
+    	<class name="TestCases.MSIL_Registration_price">
     	</class>
 
 

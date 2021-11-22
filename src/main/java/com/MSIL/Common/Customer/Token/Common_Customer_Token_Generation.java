@@ -32,8 +32,8 @@ public class Common_Customer_Token_Generation
                             ChromeOptions options = new ChromeOptions();
                             options.addArguments("--headless", "--window-size=1920,1200");                         
                              WebDriverManager.chromedriver().setup();
-                             driver = new ChromeDriver();
-                             //driver = new ChromeDriver(options);
+                             //driver = new ChromeDriver();
+                             driver = new ChromeDriver(options);
                              driver.get("http://common-customer-login-client.s3-website.ap-south-1.amazonaws.com/otp/login");
                              driver.manage().window().maximize();
                              driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
