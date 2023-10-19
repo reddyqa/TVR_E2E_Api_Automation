@@ -8,7 +8,8 @@ import com.MSIL.Setup.BaseSetup;
 public class DataProviderClass extends BaseSetup
 {
 	@org.testng.annotations.DataProvider(name = "dp")
-	public Object[][] getData(Method method)
+	public Object[][] getData(Method method) throws NegativeArraySizeException
+	
 	{
 		
 		String sheetName = method.getName();		
@@ -18,10 +19,11 @@ public class DataProviderClass extends BaseSetup
 		//System.out.println(rowCount);	
 		
 		int columnCount = excel.getColumnCount(sheetName);
-		
+		System.out.println("row count:"+rowCount);
 		//System.out.println("colum count: "+columnCount);
 		
 		Object[][] data = new Object[rowCount-1][1];
+		
 		
 		Hashtable<String, String> table = null;
 		

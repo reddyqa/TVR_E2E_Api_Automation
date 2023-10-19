@@ -25,7 +25,10 @@ public class BaseSetup
 	public int lStartTime;
 	public int lEndTime;
 	public static Logger log = Logger.getLogger(BaseSetup.class);
-	public static ExcelReader excel = new ExcelReader("./testdata/TestData.xlsx");
+	//public static ExcelReader excel = new ExcelReader("./testdata/TestData_Common.xlsx");
+	//public static ExcelReader excel = new ExcelReader("./testdata/TestData.xlsx");
+	public static ExcelReader excel = new ExcelReader("./testdata/Certification1.xlsx");
+
 	public static Properties config = new Properties();
 	public static ExtentReports extent;
 	

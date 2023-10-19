@@ -507,4 +507,10 @@ public ExcelReader(String path) {
 		
 	}
 
+
+	public void setCellData(String sheetname, String colName, int rowNum, Integer valueOf) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

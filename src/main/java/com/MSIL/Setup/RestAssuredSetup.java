@@ -1,11 +1,9 @@
 package com.MSIL.Setup;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeSuite;
 
-import com.MSIL.ENUMS.Context;
+
 
 import io.restassured.RestAssured;
 
@@ -16,15 +14,21 @@ public class RestAssuredSetup extends BaseSetup
 	@BeforeSuite(alwaysRun=true)
 	public void configure()
 	{
-		/*------------SIT Environment-----------------*/
-		RestAssured.baseURI = "https://dy8338njja.execute-api.ap-south-1.amazonaws.com/qa/";
-		//RestAssured.baseURI = "https://d1x3uucz02lohy.cloudfront.net";
+		
+		
+		//eve
+	//RestAssured.baseURI = "http://43.205.167.27:9072/evaluation/v1";
+		
+	//certification
+	RestAssured.baseURI = "http://3.110.39.35:9075/certification/v1";
+	
+		//vehicle deatils
+     //RestAssured.baseURI ="http://115.113.250.98:98/DmsServiceTest.svc/";
+		
+		//RTO deatils
+	//RestAssured.baseURI = "https://evaluator-int-dev.sg-s1.cloudhub.io/trv-evaluator/v1/";
+		
 	}
 	
-	public static  String generateRandomNumber() {
-        String number = "9"+Integer.toString(ThreadLocalRandom.current().nextInt(111111111, 999999999));
-        //context.setAttribute("Mobile_number", number);
-		//System.out.println("Random Integers: " + number);
-        return number;
-	}
+	
 }

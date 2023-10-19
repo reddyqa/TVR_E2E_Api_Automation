@@ -18,7 +18,7 @@ public class ExtentManager
 		} else {
 			extent = new ExtentReports();
 			extent.attachReporter(getHtmlReporter());
-			extent.setSystemInfo("Host Name", "Gurender");
+			extent.setSystemInfo("Host Name", "Hanumaraddy M");
 			
 			extent.setAnalysisStrategy(AnalysisStrategy.CLASS);
 			return extent;

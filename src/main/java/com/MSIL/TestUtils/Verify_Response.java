@@ -112,5 +112,33 @@ public class Verify_Response
 		Assert.assertEquals(lhmap.get("mobile"), "8130009677");
 		
 	}
+	
+	@SuppressWarnings({ "static-access", "unused" })
+	public static void verify_Response_getgroupDetails(Response str_Reponse, String uuid)
+	{
+		System.out.println("Message: "+str_Reponse.getBody().asString());
+		JsonPath jsonPathEvaluator = str_Reponse.jsonPath();
+		Queries q = new Queries();			
+		Map<String, String> lhmap = new HashMap<String, String>();	
+		lhmap.put("id", jsonPathEvaluator.get("data.id"));
+		lhmap.put("code", jsonPathEvaluator.get("data.code"));
+		lhmap.put("name", jsonPathEvaluator.get("data.name"));
+		lhmap.put("description", jsonPathEvaluator.get("data.description"));
+		lhmap.put("active", jsonPathEvaluator.get("data.active"));
+		lhmap.put("validFrom", jsonPathEvaluator.get("data.validFrom"));
+		lhmap.put("validTo", jsonPathEvaluator.get("data.validTo"));
+		lhmap.put("appId", jsonPathEvaluator.get("data.appId"));
+		lhmap.put("appName", jsonPathEvaluator.get("data.appName"));
+		lhmap.put("appType", jsonPathEvaluator.get("data.appType"));
+		lhmap.put("createdAt", jsonPathEvaluator.get("data.createdAt"));
+		lhmap.put("createdBy", jsonPathEvaluator.get("data.createdBy"));
+		lhmap.put("modifiedAt", jsonPathEvaluator.get("data.modifiedAt"));
+		lhmap.put("modifiedBy", jsonPathEvaluator.get("data.modifiedBy"));
+		lhmap.put("roleCount", jsonPathEvaluator.get("data.roleCount"));
+					
+		Assert.assertEquals(lhmap.get("createdBy"), "SYSTEM");
+	}
+		
+	
 
 }

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="env" value="PREPROD"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="env" value="QA"/>
   <listeners>
     <listener class-name="com.MSIL.TestUtils.CustomListners"/>
     <listener class-name="com.MSIL.TestUtils.RetryListeners"/>
   </listeners>
   <test name="API Test(failed)">
     <classes>
-      <class name="TestCases.MSIL_Registration_price">
+      <class name="TestCases.Certification.CertExteriorImages">
         <methods>
-          <include name="msil" invocation-numbers="0 0 0"/>
+          <include name="beforClass"/>
+          <include name="CertExterior" invocation-numbers="0 0 0 1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 12 12"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="setup"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="configure"/>
         </methods>
-      </class> <!-- TestCases.MSIL_Registration_price -->
+      </class> <!-- TestCases.Certification.CertExteriorImages -->
     </classes>
   </test> <!-- API Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

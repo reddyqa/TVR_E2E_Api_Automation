@@ -56,6 +56,16 @@ public class Queries extends BaseSetup
       
 	}
 	
+	public static String getOTPCommonCustomer(Object object)
+	{
+		query = "select otp from otp_details "+ 
+							"where number= '"+object+ "';";
+		String otp = ReadFromDB.getData(Database.COMMON_MASTERDATA, query).get(0);
+		System.out.println("OTP Value: "+otp);
+            return otp;
+      
+	}
+	
 	
 	public static String citygroupid()
 	{
