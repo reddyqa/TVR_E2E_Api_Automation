@@ -132,6 +132,18 @@ public class BaseSetup
 		
 	}
 
+	public void assertStatusCode(int statusCode, String expectedStatusCode)
+	{
+		String expectedcode = expectedStatusCode.split(".")[0];
+		Assert.assertEquals(Integer.toString(statusCode), expectedcode);
+	}
+
+	public String getExpStatusCode(String expectedcode)
+	{
+		return expectedcode.substring(0, expectedcode.indexOf('.'));
+
+	}
+
 	public void assignAuthor(String authorName)
 	{
 		testLog.get().assignAuthor(authorName);
