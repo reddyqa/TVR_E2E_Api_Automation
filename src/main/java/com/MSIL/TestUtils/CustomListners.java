@@ -24,13 +24,11 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 public class CustomListners extends BaseSetup implements ITestListener, ISuiteListener
 {
 	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onStart(ITestContext arg0) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onTestFailure(ITestResult arg0) {

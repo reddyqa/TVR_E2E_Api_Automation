@@ -23,13 +23,11 @@ import com.aventstack.extentreports.ExtentTest;
 public class BaseSetup
 {
 	public int lStartTime;
-	public int lEndTime;
 	public static Logger log = Logger.getLogger(BaseSetup.class);
 	//public static ExcelReader excel = new ExcelReader("./testdata/TestData_Common.xlsx");
 	//public static ExcelReader excel = new ExcelReader("./testdata/TestData.xlsx");
 	public static ExcelReader excel = new ExcelReader("./testdata/Certification.xlsx");
 
-	public static Properties config = new Properties();
 	public static ExtentReports extent;
 	
 	/*
@@ -40,11 +38,11 @@ public class BaseSetup
 	 
 	
 	
-	  public static InheritableThreadLocal<ExtentTest> parentTest= new InheritableThreadLocal<ExtentTest>(); 
-	  public static InheritableThreadLocal<ExtentTest> testLog = new InheritableThreadLocal<ExtentTest>();
+	  public static InheritableThreadLocal<ExtentTest> parentTest= new InheritableThreadLocal<>();
+	  public static InheritableThreadLocal<ExtentTest> testLog = new InheritableThreadLocal<>();
 	 
 	
-	public Map<String, ExtentTest> map = new HashMap<String, ExtentTest>();
+	public Map<String, ExtentTest> map = new HashMap<>();
 	
 	public static Properties configProperty;
 	
@@ -60,11 +58,9 @@ public class BaseSetup
 			try {
 				configProperty.load(fi);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		extent = ExtentManager.GetExtent();	
@@ -120,7 +116,7 @@ public class BaseSetup
 	@BeforeMethod
 	public void beforeMethod()
 	{
-		;
+
 	}
 	
 	
@@ -135,19 +131,7 @@ public class BaseSetup
 	{
 		
 	}
-	
-	public void assertStatusCode(int statusCode, String expectedStatusCode)
-	{
-		String expectedcode = expectedStatusCode.split(".")[0];
-		Assert.assertEquals(Integer.toString(statusCode), expectedcode);
-	}
-	
-	public String getExpStatusCode(String expectedcode) 
-	{
-		return expectedcode.substring(0, expectedcode.indexOf('.'));
-		
-	}
-	
+
 	public void assignAuthor(String authorName)
 	{
 		testLog.get().assignAuthor(authorName);

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.MSIL.Setup.RestAssuredSetup;
 import com.MSIL.TestUtils.DataProviderClass;
 
-public class CertExtImageUpload extends RestAssuredSetup
+public class CertExtimageUpload extends RestAssuredSetup
 {
 
 		//@Parameters({ "value" })
@@ -16,7 +16,6 @@ public class CertExtImageUpload extends RestAssuredSetup
 			public static void CertExtImgUpload(Hashtable<String, String>data, ITestContext context)
 			{
 				String sheetname= "CertExtImgUpload";
-				
 				testLog.get().assignAuthor("Chetan");
 				testLog.get().assignCategory("Functional Test");
 				testLog.get().info("Upload all certification exterior Images");

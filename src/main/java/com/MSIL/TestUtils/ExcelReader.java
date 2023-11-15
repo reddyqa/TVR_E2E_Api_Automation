@@ -298,7 +298,7 @@ public ExcelReader(String path) {
 
 	    //XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
 	    
-	    XSSFHyperlink link = (XSSFHyperlink) createHelper.createHyperlink(HyperlinkType.FILE);
+	    XSSFHyperlink link = createHelper.createHyperlink(HyperlinkType.FILE);
 	    link.setAddress(url);
 	    cell.setHyperlink(link);
 	    cell.setCellStyle(hlink_style);
@@ -509,8 +509,7 @@ public ExcelReader(String path) {
 
 
 	public void setCellData(String sheetname, String colName, int rowNum, Integer valueOf) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }
