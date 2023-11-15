@@ -1,0 +1,80 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1" parallel="false">
+
+	<listeners>
+		<listener class-name="com.MSIL.TestUtils.CustomListners"></listener>
+		<listener class-name="com.MSIL.TestUtils.RetryListeners"></listener>
+	</listeners>
+	<parameter name="env" value="QA" />
+	<test name="API Test">
+		<!-- <parameter name="env" value="QA"/> -->
+		<!-- <groups> <run> <include name="Smoke"/> </run> </groups> -->
+		<classes>
+			<!-- 
+			<class name="TestCases.aatrvcreateenq"> </class>
+			 <class name="TestCases.GetVehicleDetails"> 
+				</class> 
+				<class name="TestCases.Upload_Generic_Image"></class>
+				 <class name="TestCases.CAR_Details"> 
+				</class>
+				 <class name="TestCases.ExteriorImgUpload"> </class> 
+				<class name="TestCases.ExteriorImages"> 
+				</class> 
+				
+				<class name="TestCases.Interior1"> </class> 
+				<class name="TestCases.TestDrive_TC">  </class>
+				 <class name="TestCases.Engine_TC"> </class> 
+				<class name="TestCases.Functions_TC"> 	</class>
+			 <class name="TestCases.Frames_TC"> </class>
+				
+				
+				 <class name="TestCases.Refurbishment_Cost_Page_TC"> 
+				</class>
+				 <class name="TestCases.Rating_And_Pricing_Page_TC"> </class> 
+				 <class 
+				name="TestCases.aatrvcreateenq"> </class> <class name="TestCases.Upload_Generic_Image"></class> 
+				<class name="TestCases.CAR_Details"> </class> <
+				<class name="TestCases.EvaluationDetailsByID_TC"></class> 
+				<class name="TestCases.Get_RTO_Details_TC"> </class> <class name="TestCases.TestDrive_TC"> 
+				</class> 
+				
+				<class name="TestCases.Get_RTO_Details_TC"> </class> 
+				
+				<class name="TestCases.ExteriorImgUpload"> 
+				</class> <class name="TestCases.GetVehicleDetails"> </class> <class name="TestCases.GetVehicleDetails"> 
+				</class> 
+			
+		<class name="TestCases.CAR_Details"> 
+				</class>
+							
+							<class name="TestCases.ExteriorImages"> 
+				</class> 
+						
+						<class name="TestCases.Interior1"> </class> 
+				<class name="TestCases.TestDrive_TC">  </class>
+				 <class name="TestCases.Engine_TC"> </class> 
+				<class name="TestCases.Functions_TC"> 	</class>
+			 <class name="TestCases.Frames_TC"> </class>
+						
+				 <class name="TestCases.Refurbishment_Cost_Page_TC"> 
+				</class>
+				 <class name="TestCases.Rating_And_Pricing_Page_TC"> </class> 
+				
+
+	<class name="TestCases.CAR_Details"> 
+				</class>
+							
+				<class name="TestCases.ExteriorImages"> 
+				</class> 
+						
+						<class name="TestCases.Interior1"> </class> 
+				<class name="TestCases.TestDrive_TC">  </class>
+				 <class name="TestCases.Engine_TC"> </class> 
+				<class name="TestCases.Functions_TC"> 	</class>
+			 <class name="TestCases.Frames_TC"> </class>-->     
+			
+			<class name="TestCases.Certification.Certi_Engine_TC"> </class>
+			
+					</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
