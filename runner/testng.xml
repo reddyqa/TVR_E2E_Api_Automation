@@ -73,7 +73,7 @@
 				<class name="TestCases.Functions_TC"> 	</class>
 			 <class name="TestCases.Frames_TC"> </class>-->     
 			
-			<class name="TestCases.Certification.Certi_Frames_TC"> </class>
+			<class name="TestCases.Certification.StartCertificationTC"> </class>
 			
 					</classes>
 	</test> <!-- Test -->

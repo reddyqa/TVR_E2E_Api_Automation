@@ -29,6 +29,5 @@ public class RestAssuredSetup extends BaseSetup
 	//RestAssured.baseURI = "https://evaluator-int-dev.sg-s1.cloudhub.io/trv-evaluator/v1/";
 		
 	}
-	
-	
+
 }
